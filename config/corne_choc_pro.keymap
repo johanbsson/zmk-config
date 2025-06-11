@@ -27,8 +27,6 @@
         // | a(SFT)| s(CTRL)| d(ALT) | f(GUI)|  G   | LALT | RALT |  H   | j(GUI)| k(ALT)| l(ALT)| ö(SFT)|  '   |
         // | SHFT |  Z   |  X   |  C   |  V   |  B   |               |  N   |  M   |  ,   |  .   |  /   | ESC  |
         //                        | GUI | LWR | SPC |               | ENT | RSE | ALT |
-        default_layer {
-            display-name = "QWERTY";
             bindings = <
                 &kp TAB   &kp Q &kp W &kp E &kp R &kp T &kp C_MUTE &kp C_PP &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
                 &hm LSHFT A &hm LCTRL S &hm LALT D &hm LGUI F &kp G &kp LALT &kp RALT &kp H &hm RGUI J  &hm RALT K &hm RALT L &hm RSHFT SEMI &kp SQT
