@@ -5,7 +5,7 @@
 # pass flags to the build command, `snippet` to add a Zephyr snippet, and
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
----
+
 include:
   - board: corne_choc_pro_left
     snippet: studio-rpc-usb-uart
