@@ -18,12 +18,14 @@
 / {
     
     behaviors {
-        hm = &hold_tap {
+        hm: hm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM";
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             hold-trigger-key-positions = <0>;
-            hold-trigger-on-release
+            hold-trigger-on-release;
         };
     };
     
