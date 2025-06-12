@@ -23,7 +23,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             hold-trigger-key-positions = <0>;
-            hold-trigger-on-release;
+            hold-trigger-on-release
         };
     };
     
