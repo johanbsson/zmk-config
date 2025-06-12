@@ -17,6 +17,7 @@
 
 / {
     
+    
     behaviors {
         hm: hm {
             compatible = "zmk,behavior-hold-tap";
@@ -26,8 +27,10 @@
             quick-tap-ms = <150>;
             hold-trigger-key-positions = <0>;
             hold-trigger-on-release;
+            bindings = <>;
         };
     };
+        
     
     keymap {
         compatible = "zmk,keymap";
