@@ -18,10 +18,11 @@
 / {
     
     
+    
     behaviors {
         hm: hm {
             compatible = "zmk,behavior-hold-tap";
-            label = "HM";
+            #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
@@ -30,6 +31,8 @@
             bindings = <>;
         };
     };
+        
+        
         
     
     keymap {
