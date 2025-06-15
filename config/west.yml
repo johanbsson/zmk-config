@@ -1,5 +1,3 @@
-  https://github.com/joelspadin  /zmk-locales
-
 manifest:
   remotes:
     - name: zmkfirmware
@@ -16,6 +14,5 @@ manifest:
     - name: zmk-locales
       remote: joelspadin
       revision: main
-
   self:
     path: config
