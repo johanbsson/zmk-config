@@ -136,16 +136,12 @@
   // |     |     |     |     |     |     ||                ||      |      |      |     |     |
   // |      |      |      ||       |       |      |
   
-  
-  
-  
   bindings = <
-  &kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L &kp M &kp N
-  &kp O &kp P &kp Q &kp R &kp S &kp T &kp U &kp V &kp W &kp X &kp Y &kp Z &kp ENTER &kp ESC
-  &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6 &kp 7 &kp 8 &kp 9 &kp 0 &kp MINUS &kp EQUAL
-  &kp TAB &kp SPACE &kp BACKSPACE &kp DELETE &kp LEFT &kp RIGHT
+  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &kp LCTRL  &kp RCTRL  &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12
+  &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
+  &trans     &trans     &trans     &trans     &trans     &trans                &trans     &trans     &trans     &trans     &trans     &trans
+  &trans     &trans     &trans                &trans     &trans     &trans
   >;
-  
 
 };
 
