@@ -82,7 +82,7 @@
             //                               | GUI  |      | SPACE|        | RET |      | ALT |
   
             bindings = <
-            &kp TAB     &SV_N1        &SV_N2        &SV_N3       &SV_N4       &SV_N5       &kp LCTRL   &kp RCTRL   &SV_N6      &SV_N7      &SV_N8      &SV_N9      &SV_N0      &kp BSPC
+            &kp TAB     &N1        &N2        &N3       &N4       &N5       &kp LCTRL   &kp RCTRL   &N6      &N7      &N8      &N9      &N0      &kp BSPC
             &kp LCTRL   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp LALT    &kp RALT    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp HOME    &kp END
             &kp LSHFT   &bt BT_CLR    &rgb_ug RGB_TOG &sys_reset &bootloader  &studio_unlock             &kp PG_UP   &kp PG_DN   &trans      &trans      &trans      &trans
             &kp LGUI     &trans        &kp SPACE                         &kp RET     &trans      &kp RALT
