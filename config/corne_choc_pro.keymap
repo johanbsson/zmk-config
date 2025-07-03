@@ -138,7 +138,7 @@
   
   bindings = <
   &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6    &kp LCTRL &kp RCTRL &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-  &kp LCTRL &kp LALT  &kp LSHFT &kp LGUI  &kp INS   &kp CAPS  &trans    &trans    &kp MUTE  &kp C_VOL_DN &kp C_VOL_UP &kp C_PP   &kp PSCR  &trans
+  &kp LCTRL &kp LALT &kp LSHFT &kp LGUI &kp INS &kp CAPS &trans &trans &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp C_PLAY_PAUSE &kp PSCR &trans
   &trans    &trans    &trans    &trans    &trans    &trans                       &trans    &trans       &trans        &trans      &trans    &trans
   &trans    &trans    &trans                       &trans    &trans       &trans
   >;
