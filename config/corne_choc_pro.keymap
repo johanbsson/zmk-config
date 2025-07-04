@@ -112,14 +112,14 @@
             display-name = "NAV";
   
             // |      |      | PGUP | HOME |      |      ||      |      ||      | END  |      |      |      |      |
-            // |      | C-A  | C-E  |      |      |      ||      |      || ←    | ↓    | ↑    | →    | RET  |      |
+            // |  ALT | C-A  | C-E  |      |      |      ||      |      || ←    | ↓    | ↑    | →    | RET  |      |
             // |      |      |      | ESC  | BSPC | DEL  ||                || TAB | SPACE |      |      |      |
             // |      |      | SPACE || RET  |      |      |
         
             bindings = <
-              &trans &trans   &kp PG_UP   &kp HOME  &trans   &trans   &trans   &trans   &trans   &kp END   &trans   &trans   &trans   &trans
-              &trans &kp LC(A) &kp LC(E)  &trans    &trans   &trans   &trans   &trans   &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp RET  &trans
-              &trans &trans   &trans      &kp ESC   &kp BSPC &kp DEL                       &kp TAB  &kp SPACE &trans     &trans   &trans   &trans
+              &trans   &trans   &kp PG_UP   &kp HOME  &trans   &trans   &trans   &trans   &trans   &kp END   &trans   &trans   &trans   &trans
+              &kp LALT &kp LC(A) &kp LC(E)  &trans    &trans   &trans   &trans   &trans   &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp RET  &trans
+              &trans   &trans   &trans      &kp ESC   &kp BSPC &kp DEL                       &kp TAB  &kp SPACE &trans     &trans   &trans   &trans
               &trans    &trans   &kp SPACE                      &kp RET  &trans   &trans
             >;
         };
