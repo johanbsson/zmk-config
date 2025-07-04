@@ -73,7 +73,7 @@
 
         lower_layer {
   
-            display-name = "NSYS";
+            display-name = "NUM";
             // -----------------------------------------------------------------------------------------
             
             //  | TAB   |  1   |  2   |  3   |  4   |  5   | LCTRL | RCTRL |  6   |  7   |  8   |  9   |  0   | BSPC |
@@ -89,61 +89,59 @@
             >;
 
         };
-  
-  
-  raise_layer {
-  display-name = "SMBOL";
-  // -----------------------------------------------------------------------------------------
-  // | TAB   |  !   |  @   |  #   |  $   |  %   | LCTRL | RCTRL |  ^   |  &   |  *   |  (   |  )   | BSPC |
-        // | CTRL  |  '   |  "   |  :   |  ;   |  =   | LALT  | RALT  |  -   |  +   |  [   |  ]   |  \   |  `   |
-  // | SHFT  |  <   |  >   |  {   |  }   |  |   |       |       |  _   |  ?   |  ,   |  .   |  /   |  ~   |
-  //                        | GUI  |      | SPACE |            | RET  |      | ALT |
-  
-  
-  bindings = <
-  &kp TAB     &kp SV_EXCL   &kp SV_AT     &kp SV_HASH   &kp SV_DLLR   &kp SV_PRCNT  &kp LCTRL   &kp RCTRL   &kp SV_CARET  &kp SV_AMPS   &kp SV_ASTRK  &kp SV_LPAR  &kp SV_RPAR  &kp BSPC
-  &kp LCTRL   &kp SV_SQT    &kp SV_DQT    &kp SV_COLON  &kp SV_SEMI   &kp SV_EQUAL  &kp LALT    &kp RALT    &kp SV_MINUS  &kp SV_PLUS   &kp SV_LBKT   &kp SV_RBKT  &kp SV_BSLH  &kp SV_GRAVE
-  &kp LSHFT   &kp SV_LT     &kp SV_GT     &kp SV_LBRC   &kp SV_RBRC   &kp SV_PIPE                           &kp SV_UNDER  &kp SV_QMARK  &kp SV_COMMA  &kp SV_DOT   &kp SV_FSLH  &kp SV_TILDE
-  &kp LGUI   &trans         &kp SPACE                            &kp RET      &trans       &kp RALT
-  >;
         
-
-};
+        raise_layer {
+            display-name = "SYM";
+            
+            // | TAB |  !  |  @  |  #  |  $  |  %  || LCTRL | RCTRL ||  ^  |  &  |  (  |  )  |  *  | BSPC |
+            // |CTRL |  '  |  "  |  ~  |  `  |  =  ||  LALT | RALT  ||  -  |  +  |  [  |  ]  |  \  |  |   |
+            // |SHFT |  <  |  >  |     |     |  _  ||        (tomt) ||  ?  |  {  |  }  |  /  |     |      |
+            // | GUI |     | SPACE || RET |     | ALT |
+                  
+            bindings = <
+              &kp TAB     &kp SV_EXCL   &kp SV_AT     &kp SV_HASH   &kp SV_DLLR   &kp SV_PRCNT  &kp LCTRL   &kp RCTRL   &kp SV_CARET  &kp SV_AMPS   &kp SV_LPAR  &kp SV_RPAR  &kp SV_ASTRK  &kp BSPC
+              &kp LCTRL   &kp SV_SQT    &kp SV_DQT    &kp SV_TILDE  &kp SV_GRAVE  &kp SV_EQUAL  &kp LALT    &kp RALT    &kp SV_MINUS  &kp SV_PLUS   &kp SV_LBKT  &kp SV_RBKT  &kp SV_BSLH   &kp SV_PIPE
+              &kp LSHFT   &kp SV_LT     &kp SV_GT     &trans        &trans        &kp SV_UNDER                       &trans         &kp SV_QMARK  &kp SV_LBRC  &kp SV_RBRC  &kp SV_FSLH   &trans
+              &kp LGUI  &trans        &kp SPACE                          &kp RET       &trans       &kp RALT
+            >;
+        };
+  
+        
+        
+        extra_layer_1 {
+            display-name = "NAV";
+  
+            // |      |      | PGUP | HOME |      |      ||      |      ||      | END  |      |      |      |      |
+            // |      | C-A  | C-E  |      |      |      ||      |      || ←    | ↓    | ↑    | →    | RET  |      |
+            // |      |      |      | ESC  | BSPC | DEL  ||                || TAB | SPACE |      |      |      |
+            // |      |      | SPACE || RET  |      |      |
+        
+            bindings = <
+              &trans &trans   &kp PG_UP   &kp HOME  &trans   &trans   &trans   &trans   &trans   &kp END   &trans   &trans   &trans   &trans
+              &trans &kp LC(A) &kp LC(E)  &trans    &trans   &trans   &trans   &trans   &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp RET  &trans
+              &trans &trans   &trans      &kp ESC   &kp BSPC &kp DEL                       &kp TAB  &kp SPACE &trans     &trans   &trans   &trans
+              &trans    &trans   &kp SPACE                      &kp RET  &trans   &trans
+            >;
+        };
+        
   
   
-  extra_layer_1 {
-  display-name = "NAV";
-  // |       |       | PGUP | HOME |      |      ||      |      ||      | END  | ↑   |      |      |      |
-  // |       | C-A   | C-E  |      |      |      ||      |      || ←    | ↓    | →   | RET  |      |      |
-  // |       |       |      | ESC  | BSPC | DEL  ||                || TAB | SPACE |      |      |      |
-  // |      |      | SPACE || RET  |      |      |
-  
-  bindings = <
-  &trans &trans   &kp PG_UP   &kp HOME  &trans   &trans   &trans   &trans   &trans   &kp END   &kp UP     &trans   &trans   &trans
-  &trans &kp LC(A) &kp LC(E)  &trans    &trans   &trans   &trans   &trans   &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET  &trans   &trans
-  &trans &trans   &trans      &kp ESC   &kp BSPC &kp DEL                       &kp TAB  &kp SPACE &trans     &trans   &trans   &trans
-  &trans    &trans   &kp SPACE                      &kp RET  &trans   &trans
-  >;
-};
   
   
-  
-  extra_layer_2 {
-  display-name = "FUNC";
-  
-  // | F1  | F2  | F3  | F4  | F5  | F6  || LCTRL | RCTRL || F7  | F8  | F9  | F10 | F11 | F12 |
-  // | CTRL| ALT | SHFT| GUI | INS | CAPS||       |       || MUTE| VOL- | VOL+ | PLAY| PSCR|     |
-  // |     |     |     |     |     |     ||                ||      |      |      |     |     |
-  // |      |      |      ||       |       |      |
-  
-  bindings = <
-  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &kp LCTRL  &kp RCTRL  &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12
-  &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
-  &trans     &trans     &trans     &trans     &trans     &trans                &trans     &trans     &trans     &trans     &trans     &trans
-  &trans     &trans     &trans                &trans     &trans     &trans
-  >;
-
-};
+        extra_layer_2 {
+            display-name = "FUNC";
+            
+            // | F1  | F2  | F3  | F4  | F5  | F6  || LCTRL | RCTRL || F7  | F8  | F9  | F10 | F11 | F12 |
+            // | CTRL| ALT | SHFT| GUI | INS | CAPS||       |       || MUTE| VOL- | VOL+ | PLAY| PSCR|     | //denna rad gick inte att få ordning på
+            // |     |     |     |     |     |     ||                ||      |      |      |     |     |
+            // |      |      |      ||       |       |      |
+            bindings = <
+              &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &kp LCTRL  &kp RCTRL  &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12
+              &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
+              &trans     &trans     &trans     &trans     &trans     &trans                &trans     &trans     &trans     &trans     &trans     &trans
+              &trans     &trans     &trans                &trans     &trans     &trans
+            >;
+        };
 
 
         extra_layer_3 {
