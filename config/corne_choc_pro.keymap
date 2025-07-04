@@ -95,7 +95,7 @@
             
             // | TAB |  !  |  @  |  #  |  $  |  %  || LCTRL | RCTRL ||  ^  |  &  |  (  |  )  |  *  | BSPC |
             // |CTRL |  '  |  "  |  ~  |  `  |  =  ||  LALT | RALT  ||  -  |  +  |  [  |  ]  |  \  |  |   |
-            // |SHFT |  <  |  >  |     |     |  _  ||        (tomt) ||  ?  |  {  |  }  |  /  |     |      |
+            // |SHFT |  <  |  >  |     |     |  _  ||        (tomt) ||  ?  |     |  {  |  }  |  /  |      |
             // | GUI |     | SPACE || RET |     | ALT |
                   
             bindings = <
