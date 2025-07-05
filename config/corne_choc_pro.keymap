@@ -185,10 +185,4 @@
         };
     };
 
-  &rgb {
-    effect = "rainbow_swirl";
-    brightness = <120>;
-    effect-speed = <25>;
-    effect-step = <10>;
-  };
 };
