@@ -184,7 +184,6 @@
             >;
         };
     };
-};
 
   &rgb {
     effect = "rainbow_swirl";
@@ -192,3 +191,4 @@
     effect-speed = <25>;
     effect-step = <10>;
   };
+};
