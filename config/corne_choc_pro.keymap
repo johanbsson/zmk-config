@@ -76,15 +76,15 @@
             display-name = "NUM";
             // -----------------------------------------------------------------------------------------
             
-            //  | TAB   |  1   |  2   |  3   |  4   |  5   | LCTRL | RCTRL |  6   |  7   |  8   |  9   |  0   | BSPC |
-            //  | CTRL  | BT0  | BT1  | BT2  | BT3  | BT4  | LALT  | RALT  | LEFT | DOWN |  UP  | RIGHT| HOME | END  |
+            //  | TAB   |  1   |  2   |  3   |  4   |  5   |   |    |  6   |  7   |  8   |  9   |  0   | BSPC |
+            //  | CTRL  | BT0  | BT1  | BT2  | BT3  | BT4  |   |   | LEFT | DOWN |  UP  | RIGHT| HOME | END  |
             //  | SHFT  | BTCLR| RGB  | RSET |BOOT  |UNLCK |       |       |PGUP |PGDN  |      |      |      |      |
             //                               | GUI  |      | SPACE|        | RET |      | ALT |
   
             bindings = <
-            &kp TAB     &kp N1        &kp N2        &kp N3       &kp N4       &kp N5       &kp LCTRL   &kp RCTRL   &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp BSPC
-            &kp LCTRL   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp LALT    &kp RALT    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp HOME    &kp END
-            &kp LSHFT   &bt BT_CLR    &rgb_ug RGB_TOG &sys_reset &bootloader  &studio_unlock             &kp PG_UP   &kp PG_DN   &trans      &trans      &trans      &trans
+            &trans &kp N1        &kp N2        &kp N3       &kp N4       &kp N5       &trans    &trans  &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp BSPC
+            &trans &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp HOME    &kp END
+            &trans &bt BT_CLR    &rgb_ug RGB_TOG &sys_reset &bootloader  &studio_unlock             &kp PG_UP   &kp PG_DN   &trans      &trans      &trans      &trans
             &kp LGUI     &trans        &kp SPACE                         &kp RET     &trans      &kp RALT
             >;
 
@@ -93,15 +93,15 @@
         raise_layer {
             display-name = "SYM";
             
-            // | TAB |  !  |  @  |  #  |  $  |  %  || LCTRL | RCTRL ||  ^  |  &  |  (  |  )  |  *  | BSPC |
-            // |CTRL |  '  |  "  |  ~  |  `  |  =  ||  LALT | RALT  ||  -  |  +  |  [  |  ]  |  \  |  |   |
-            // |SHFT |  <  |  >  |     |     |  _  ||        (tomt) ||  ?  |     |  {  |  }  |  /  |      |
+            // | |  !  |  @  |  #  |  $  |  %  || | | |  ^  |  &  |  (  |  )  |  *  | |
+            // | |  '  |  "  |  ~  |  `  |  =  ||  | | |  -  |  +  |  [  |  ]  |  \  |  |   |
+            // | |  <  |  >  |     |     |  _  ||        (tomt) ||  ?  |     |  {  |  }  |  /  |      |
             // | GUI |     | SPACE || RET |     | ALT |
                   
             bindings = <
-              &kp TAB     &kp SV_EXCL   &kp SV_AT     &kp SV_HASH   &kp SV_DLLR   &kp SV_PRCNT  &kp LCTRL   &kp RCTRL   &kp SV_CARET  &kp SV_AMPS   &kp SV_LPAR  &kp SV_RPAR  &kp SV_ASTRK  &kp BSPC
-              &kp LCTRL   &kp SV_SQT    &kp SV_DQT    &kp SV_TILDE  &kp SV_GRAVE  &kp SV_EQUAL  &kp LALT    &kp RALT    &kp SV_MINUS  &kp SV_PLUS   &kp SV_LBKT  &kp SV_RBKT  &kp SV_BSLH   &kp SV_PIPE
-              &kp LSHFT   &kp SV_LT     &kp SV_GT     &trans        &trans        &kp SV_UNDER                       &trans         &kp SV_QMARK  &kp SV_LBRC  &kp SV_RBRC  &kp SV_FSLH   &trans
+              &trans &kp SV_EXCL   &kp SV_AT     &kp SV_HASH   &kp SV_DLLR   &kp SV_PRCNT  &trans &trans &kp SV_CARET  &kp SV_AMPS   &kp SV_LPAR  &kp SV_RPAR  &kp SV_ASTRK  &trans 
+              &trans &kp SV_SQT    &kp SV_DQT    &kp SV_TILDE  &kp SV_GRAVE  &kp SV_EQUAL  &trans &trans &kp SV_MINUS  &kp SV_PLUS   &kp SV_LBKT  &kp SV_RBKT  &kp SV_BSLH   &kp SV_PIPE
+              &trans &kp SV_LT     &kp SV_GT     &trans        &trans        &kp SV_UNDER                       &trans         &kp SV_QMARK  &kp SV_LBRC  &kp SV_RBRC  &kp SV_FSLH   &trans
               &kp LGUI  &trans        &kp SPACE                          &kp RET       &trans       &kp RALT
             >;
         };
