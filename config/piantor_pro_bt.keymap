@@ -79,7 +79,7 @@ layers = <0>;
 combo_dollar {
 timeout-ms = <50>;
 key-positions = <27 30>;
-bindings = <&kp SV_DLR>;
+bindings = <&kp SV_DLLR>;
 layers = <0>;
 };
 
@@ -93,7 +93,7 @@ layers = <0>;
 combo_equal {
 timeout-ms = <50>;
 key-positions = <14 15>;
-bindings = <&kp SV_EQL>;
+bindings = <&kp SV_EQUAL>;
 layers = <0>;
 };
 
@@ -107,7 +107,7 @@ layers = <0>;
 combo_amp {
 timeout-ms = <50>;
 key-positions = <20 21>;
-bindings = <&kp SV_AMPR>;
+bindings = <&kp SV_AMPS>;
 layers = <0>;
 };
 
