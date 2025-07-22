@@ -55,6 +55,10 @@ hold-trigger-on-release;
 combos {
 compatible = "zmk,combos";
 
+/ {
+combos {
+compatible = "zmk,combos";
+
 combo_exclam {
 timeout-ms = <50>;
 key-positions = <25 26>;
@@ -85,7 +89,7 @@ layers = <0>;
 
 combo_at {
 timeout-ms = <50>;
-key-positions = <28 38>;
+key-positions = <5 6>;
 bindings = <&kp SV_AT>;
 layers = <0>;
 };
@@ -209,24 +213,10 @@ bindings = <&kp SV_BSLH>;
 layers = <0>;
 };
 
-combo_semicolon {
-timeout-ms = <50>;
-key-positions = <5 6>;
-bindings = <&kp SV_SEMI>;
-layers = <0>;
-};
-
-combo_colon {
-timeout-ms = <50>;
-key-positions = <18 19>;
-bindings = <&kp SV_COLON>;
-layers = <0>;
-};
-
-combo_caret {
+combo_plus {
 timeout-ms = <50>;
 key-positions = <17 18>;
-bindings = <&kp SV_CARET>;
+bindings = <&kp SV_PLUS>;
 layers = <0>;
 };
 
@@ -243,29 +233,7 @@ key-positions = <9 10>;
 bindings = <&kp SV_TILDE>;
 layers = <0>;
 };
-
-combo_underscore {
-timeout-ms = <50>;
-key-positions = <35 34>;
-bindings = <&kp SV_UNDER>;
-layers = <0>;
 };
-
-combo_euro {
-timeout-ms = <50>;
-key-positions = <39 40>;
-bindings = <&kp SV_EURO>;
-layers = <0>;
-};
-
-combo_section {
-timeout-ms = <50>;
-key-positions = <24 25>;
-bindings = <&kp SV_SECT>;
-layers = <0>;
-};
-};
-
 
 
 
