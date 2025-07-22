@@ -25,8 +25,8 @@ This is a reference list of all key combinations (combos) defined for the Pianto
 | `"`    | `U + I`       | `<7 8>`       | Double quote |
 | `(`    | `A + S`       | `<13 14>`     | Left parenthesis |
 | `)`    | `Ö + Ä`       | `<22 23>`     | Right parenthesis |
-| `[`    | `S + D`       | `<15 16>`     | Left bracket |
-| `]`    | `K + Ö`       | `<20 22>`     | Ros| Right bracket |
+| `[`    | `D + F`       | `<15 16>`     | Left bracket |
+| `]`    | `K + Ö`       | `<20 22>`     | Right bracket |
 | `{`    | `D + F`       | `<16 17>`     | Left curly brace |
 | `}`    | `L + Ä`       | `<21 23>`     | Right curly brace |
 | `<`    | `X + C`       | `<26 27>`     | Less than |
@@ -35,6 +35,8 @@ This is a reference list of all key combinations (combos) defined for the Pianto
 | `%`    | `C + V`       | `<27 28>`     | Percent sign |
 | `/`    | `N + M`       | `<30 31>`     | Forward slash |
 | `\`    | `V + B`       | `<28 29>`     | Backslash |
+
+
 
 ## Notes
 - **Key Positions**: Refer to the `default_map` in `piantor_pro_bt-layouts.dtsi` for the physical key layout.
