@@ -17,7 +17,7 @@ This is a reference list of all key combinations (combos) defined for the Pianto
 | `?`    | `M + ,`       | `<31 32>`     | Question mark |
 | `#`    | `Q + W`       | `<1 2>`       | Hash/Pound sign |
 | `$`    | `C + B`       | `<27 30>`     | Dollar sign |
-| `@`    | `V + SPC`     | `<28 38>`     | At sign |
+| `@`    | `T + Y`       | `<5 6>`       | At sign |
 | `=`    | `S + D`       | `<14 15>`     | Equal sign |
 | `|`    | `J + K`       | `<19 20>`     | Pipe/Vertical bar |
 | `&`    | `K + L`       | `<20 21>`     | Ampersand |
@@ -35,6 +35,9 @@ This is a reference list of all key combinations (combos) defined for the Pianto
 | `%`    | `C + V`       | `<27 28>`     | Percent sign |
 | `/`    | `N + M`       | `<30 31>`     | Forward slash |
 | `\`    | `V + B`       | `<28 29>`     | Backslash |
+| `+`    | `G + H`       | `<17 18>`     | Plus sign |
+| `` ` `` | `P + Å`       | `<10 11>`     | Backtick/Grave |
+| `~`    | `O + P`       | `<9 10>`      | Tilde |
 
 
 
