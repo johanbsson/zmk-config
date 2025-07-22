@@ -210,7 +210,6 @@ bindings = <&kp SV_BSLH>;
 layers = <0>;
 };
 };
-};
 
 
 
