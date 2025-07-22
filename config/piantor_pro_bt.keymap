@@ -65,7 +65,7 @@ layers = <0>;
 combo_question {
 timeout-ms = <50>;
 key-positions = <31 32>;
-bindings = <&kp SV_QUES>;
+bindings = <&kp SV_QMARK>;
 layers = <0>;
 };
 
