@@ -184,7 +184,7 @@ layers = <0>;
 combo_aster {
 timeout-ms = <50>;
 key-positions = <29 30>;
-bindings = <&kp SV_ASTRs>;
+bindings = <&kp SV_ASTR>;
 layers = <0>;
 };
 
