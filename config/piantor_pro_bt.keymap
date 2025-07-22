@@ -52,6 +52,7 @@ hold-trigger-on-release;
 };
 
 
+/ {
 combos {
 compatible = "zmk,combos";
 
@@ -93,7 +94,7 @@ layers = <0>;
 combo_equal {
 timeout-ms = <50>;
 key-positions = <14 15>;
-bindings = <&kp SV_EQUAL>;
+bindings = <&kp SV_EQL>;
 layers = <0>;
 };
 
@@ -114,14 +115,14 @@ layers = <0>;
 combo_apost {
 timeout-ms = <50>;
 key-positions = <3 4>;
-bindings = <&kp SV_QUOT>;
+bindings = <&kp SV_SQT>;
 layers = <0>;
 };
 
 combo_quote {
 timeout-ms = <50>;
 key-positions = <7 8>;
-bindings = <&kp SV_DQUO>;
+bindings = <&kp SV_DQT>;
 layers = <0>;
 };
 
@@ -142,42 +143,42 @@ layers = <0>;
 combo_lbrack {
 timeout-ms = <50>;
 key-positions = <15 16>;
-bindings = <&kp SV_LBRC>;
+bindings = <&kp SV_LBKT>;
 layers = <0>;
 };
 
 combo_rbrack {
 timeout-ms = <50>;
 key-positions = <20 22>;
-bindings = <&kp SV_RBRC>;
+bindings = <&kp SV_RBKT>;
 layers = <0>;
 };
 
 combo_lcurl {
 timeout-ms = <50>;
 key-positions = <16 17>;
-bindings = <&kp SV_LCBR>;
+bindings = <&kp SV_LBRC>;
 layers = <0>;
 };
 
 combo_rcurl {
 timeout-ms = <50>;
 key-positions = <21 23>;
-bindings = <&kp SV_RCBR>;
+bindings = <&kp SV_RBRC>;
 layers = <0>;
 };
 
 combo_less {
 timeout-ms = <50>;
 key-positions = <26 27>;
-bindings = <&kp SV_LABK>;
+bindings = <&kp SV_LT>;
 layers = <0>;
 };
 
 combo_greater {
 timeout-ms = <50>;
 key-positions = <32 33>;
-bindings = <&kp SV_RABK>;
+bindings = <&kp SV_GT>;
 layers = <0>;
 };
 
@@ -191,25 +192,25 @@ layers = <0>;
 combo_percent {
 timeout-ms = <50>;
 key-positions = <27 28>;
-bindings = <&kp SV_PERC>;
+bindings = <&kp SV_PRCNT>;
 layers = <0>;
 };
 
 combo_slash {
 timeout-ms = <50>;
 key-positions = <30 31>;
-bindings = <&kp SV_SLSH>;
+bindings = <&kp SV_FSLH>;
 layers = <0>;
 };
 
 combo_backslash {
 timeout-ms = <50>;
 key-positions = <28 29>;
-bindings = <&kp SV_BSLS>;
+bindings = <&kp SV_BSLH>;
 layers = <0>;
 };
 };
-
+};
 
 
 
