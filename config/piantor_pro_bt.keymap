@@ -52,7 +52,6 @@ hold-trigger-on-release;
 };
 
 
-/ {
 combos {
 compatible = "zmk,combos";
 
