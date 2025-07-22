@@ -52,6 +52,165 @@ hold-trigger-on-release;
 };
 
 
+combos {
+compatible = "zmk,combos";
+
+combo_exclam {
+timeout-ms = <50>;
+key-positions = <25 26>;
+bindings = <&kp SV_EXCL>;
+layers = <0>;
+};
+
+combo_question {
+timeout-ms = <50>;
+key-positions = <31 32>;
+bindings = <&kp SV_QUES>;
+layers = <0>;
+};
+
+combo_hash {
+timeout-ms = <50>;
+key-positions = <1 2>;
+bindings = <&kp SV_HASH>;
+layers = <0>;
+};
+
+combo_dollar {
+timeout-ms = <50>;
+key-positions = <27 30>;
+bindings = <&kp SV_DLR>;
+layers = <0>;
+};
+
+combo_at {
+timeout-ms = <50>;
+key-positions = <28 38>;
+bindings = <&kp SV_AT>;
+layers = <0>;
+};
+
+combo_equal {
+timeout-ms = <50>;
+key-positions = <14 15>;
+bindings = <&kp SV_EQL>;
+layers = <0>;
+};
+
+combo_pipe {
+timeout-ms = <50>;
+key-positions = <19 20>;
+bindings = <&kp SV_PIPE>;
+layers = <0>;
+};
+
+combo_amp {
+timeout-ms = <50>;
+key-positions = <20 21>;
+bindings = <&kp SV_AMPR>;
+layers = <0>;
+};
+
+combo_apost {
+timeout-ms = <50>;
+key-positions = <3 4>;
+bindings = <&kp SV_QUOT>;
+layers = <0>;
+};
+
+combo_quote {
+timeout-ms = <50>;
+key-positions = <7 8>;
+bindings = <&kp SV_DQUO>;
+layers = <0>;
+};
+
+combo_lparen {
+timeout-ms = <50>;
+key-positions = <13 14>;
+bindings = <&kp SV_LPAR>;
+layers = <0>;
+};
+
+combo_rparen {
+timeout-ms = <50>;
+key-positions = <22 23>;
+bindings = <&kp SV_RPAR>;
+layers = <0>;
+};
+
+combo_lbrack {
+timeout-ms = <50>;
+key-positions = <15 16>;
+bindings = <&kp SV_LBRC>;
+layers = <0>;
+};
+
+combo_rbrack {
+timeout-ms = <50>;
+key-positions = <20 22>;
+bindings = <&kp SV_RBRC>;
+layers = <0>;
+};
+
+combo_lcurl {
+timeout-ms = <50>;
+key-positions = <16 17>;
+bindings = <&kp SV_LCBR>;
+layers = <0>;
+};
+
+combo_rcurl {
+timeout-ms = <50>;
+key-positions = <21 23>;
+bindings = <&kp SV_RCBR>;
+layers = <0>;
+};
+
+combo_less {
+timeout-ms = <50>;
+key-positions = <26 27>;
+bindings = <&kp SV_LABK>;
+layers = <0>;
+};
+
+combo_greater {
+timeout-ms = <50>;
+key-positions = <32 33>;
+bindings = <&kp SV_RABK>;
+layers = <0>;
+};
+
+combo_aster {
+timeout-ms = <50>;
+key-positions = <29 30>;
+bindings = <&kp SV_ASTR>;
+layers = <0>;
+};
+
+combo_percent {
+timeout-ms = <50>;
+key-positions = <27 28>;
+bindings = <&kp SV_PERC>;
+layers = <0>;
+};
+
+combo_slash {
+timeout-ms = <50>;
+key-positions = <30 31>;
+bindings = <&kp SV_SLSH>;
+layers = <0>;
+};
+
+combo_backslash {
+timeout-ms = <50>;
+key-positions = <28 29>;
+bindings = <&kp SV_BSLS>;
+layers = <0>;
+};
+};
+
+
 
 
 keymap {
