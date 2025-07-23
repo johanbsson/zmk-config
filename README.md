@@ -19,7 +19,7 @@ This is a reference list of all key combinations (combos) defined for the Pianto
 | `$` | `C + N` | `<27 30>` | Dollar sign |
 | `@` | `T + Y` | `<5 6>` | At sign |
 | `=` | `S + D` | `<14 15>` | Equals sign |
-| `|` | `. + -` | `<33 34>` | Pipe |
+| `\|` | `. + -` | `<33 34>` | Pipe |
 | `&` | `K + L` | `<20 21>` | Ampersand |
 | `'` | `E + R` | `<3 4>` | Apostrophe |
 | `"` | `U + I` | `<7 8>` | Quotation mark |
