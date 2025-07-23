@@ -52,6 +52,7 @@ hold-trigger-on-release;
 };
 
 combos {
+aca
 compatible = "zmk,combos";
 
 // Z + X
