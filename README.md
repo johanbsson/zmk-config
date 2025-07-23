@@ -11,31 +11,34 @@ https://keymap-drawer.streamlit.app
 
 This is a reference list of all key combinations (combos) defined for the Piantor Pro BT keyboard using ZMK firmware with the QWERTY base layer and Swedish locale (`locale/keys_sv.h`). Each combo is triggered by pressing two keys simultaneously on the base layer (`layer 0`) with a 50ms timeout. These combos are designed for ergonomic use (horizontal adjacent fingers or thumb + finger, no same-finger verticals) and output symbols relevant for Java, Python, and Bash development.
 
+
 | Symbol | Keys to Press | Key Positions | Description |
 |--------|---------------|---------------|-------------|
 | `!`    | `Z + X`       | `<25 26>`     | Exclamation mark |
 | `?`    | `M + ,`       | `<31 32>`     | Question mark |
-| `#`    | `Q + W`       | `<1 2>`       | Hash/Pound sign |
-| `$`    | `C + B`       | `<27 30>`     | Dollar sign |
-| `@`    | `V + SPC`     | `<28 38>`     | At sign |
-| `=`    | `S + D`       | `<14 15>`     | Equal sign |
-| `|`    | `J + K`       | `<19 20>`     | Pipe/Vertical bar |
+| `#`    | `Q + W`       | `<1 2>`       | Hash sign |
+| `$`    | `C + N`       | `<27 30>`     | Dollar sign |
+| `@`    | `T + Y`       | `<5 6>`       | At sign |
+| `=`    | `S + D`       | `<14 15>`     | Equals sign |
+| `|`    | `J + K`       | `<19 20>`     | Pipe |
 | `&`    | `K + L`       | `<20 21>`     | Ampersand |
-| `'`    | `E + R`       | `<3 4>`       | Single quote/Apostrophe |
-| `"`    | `U + I`       | `<7 8>`       | Double quote |
+| `'`    | `E + R`       | `<3 4>`       | Apostrophe |
+| `"`    | `U + I`       | `<7 8>`       | Quotation mark |
 | `(`    | `A + S`       | `<13 14>`     | Left parenthesis |
 | `)`    | `Ö + Ä`       | `<22 23>`     | Right parenthesis |
-| `[`    | `D + F`       | `<15 16>`     | Left bracket |
-| `]`    | `K + Ö`       | `<20 22>`     | Right bracket |
-| `{`    | `D + F`       | `<16 17>`     | Left curly brace |
-| `}`    | `L + Ä`       | `<21 23>`     | Right curly brace |
-| `<`    | `X + C`       | `<26 27>`     | Less than |
-| `>`    | `, + .`       | `<32 33>`     | Greater than |
-| `*`    | `B + N`       | `<29 30>`     | Asterisk/Star |
+| `[`    | `D + F`       | `<15 16>`     | Left square bracket |
+| `]`    | `K + Ö`       | `<20 22>`     | Right square bracket |
+| `{`    | `F + G`       | `<16 17>`     | Left curly bracket |
+| `}`    | `L + Ä`       | `<21 23>`     | Right curly bracket |
+| `<`    | `X + C`       | `<26 27>`     | Less-than sign |
+| `>`    | `, + .`       | `<32 33>`     | Greater-than sign |
+| `*`    | `B + N`       | `<29 30>`     | Asterisk |
 | `%`    | `C + V`       | `<27 28>`     | Percent sign |
-| `/`    | `N + M`       | `<30 31>`     | Forward slash |
+| `/`    | `N + M`       | `<30 31>`     | Slash |
 | `\`    | `V + B`       | `<28 29>`     | Backslash |
-
+| `+`    | `G + H`       | `<17 18>`     | Plus sign |
+| ```    | `P + Å`       | `<10 11>`     | Grave accent |
+| `~`    | `O + P`       | `<9 10>`      | Tilde  |
 
 
 ## Notes
