@@ -48,3 +48,34 @@ This is a reference list of all key combinations (combos) defined for the Pianto
 - **Home-Row Mods**: Combos like `S + D` and `A + S` involve home-row mod keys. The 50ms timeout helps distinguish them from hold-tap behaviors, but adjust `timeout-ms` if needed.
 
 ## QWERTY Base Layer with Combos
+
+# Corne Pro BT Combo Reference
+
+| Symbol | Keys to Press | Key Positions | Description |
+|--------|---------------|---------------|-------------|
+| `(`    | `D + F`       | `<17 18>`     | Left parenthesis |
+| `)`    | `J + K`       | `<23 24>`     | Right parenthesis |
+| `{`    | `A + S`       | `<15 16>`     | Left curly brace |
+| `}`    | `L + Ö`       | `<25 26>`     | Right curly brace |
+| `[`    | `S + D`       | `<16 17>`     | Left square bracket |
+| `]`    | `K + L`       | `<24 25>`     | Right square bracket |
+| `<`    | `Z + X`       | `<29 30>`     | Less-than sign |
+| `>`    | `. + -`       | `<37 38>`     | Greater-than sign |
+| `/`    | `W + E`       | `<2 3>`       | Forward slash |
+| `\`    | `I + O`       | `<10 11>`     | Backslash |
+| `'`    | `Q + W`       | `<1 2>`       | Single quote |
+| `"`    | `U + I`       | `<9 10>`      | Double quote |
+| ```    | `Q + W`       | `<1 2>`       | Grave accent |
+| `~`    | `U + I`       | `<9 10>`      | Tilde |
+| `\|`   | `X + C`       | `<30 31>`     | Pipe |
+| `&`    | `, + .`       | `<36 37>`     | Ampersand |
+| `+`    | `W + P`       | `<2 12>`      | Plus sign |
+| `*`    | `E + O`       | `<3 11>`      | Asterisk |
+| `%`    | `R + I`       | `<4 10>`      | Percent sign |
+| `^`    | `R + I`       | `<4 10>`      | Caret |
+| `=`    | `Q + P`       | `<1 12>`      | Equals sign |
+| `!`    | `S + K`       | `<16 24>`     | Exclamation mark |
+| `?`    | `D + J`       | `<17 23>`     | Question mark |
+| `#`    | `Z + /`       | `<29 38>`     | Hash sign |
+| `$`    | `X + .`       | `<30 37>`     | Dollar sign |
+| `@`    | `C + ,`       | `<31 36>`     | At sign |
