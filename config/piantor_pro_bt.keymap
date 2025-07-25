@@ -68,10 +68,6 @@ compatible = "zmk,combos";
 
 
 
-
-
-
-
 // Press D + F for (
 combo_lparen {
 timeout-ms = <50>;
@@ -168,10 +164,10 @@ bindings = <&kp SV_DQT>;
 layers = <0>;
 };
 
-// Press E + R for `
+// Press T + Y for `
 combo_grave {
 timeout-ms = <50>;
-key-positions = <3 4>;
+key-positions = <5 6>;
 bindings = <&kp SV_GRAVE>;
 layers = <0>;
 };
@@ -256,10 +252,10 @@ bindings = <&kp SV_QMARK>;
 layers = <0>;
 };
 
-// Press Z + / for #
+// Press Z + . for #
 combo_hash {
 timeout-ms = <50>;
-key-positions = <25 34>;
+key-positions = <25 33>;
 bindings = <&kp SV_HASH>;
 layers = <0>;
 };
@@ -279,6 +275,7 @@ key-positions = <27 32>;
 bindings = <&kp SV_AT>;
 layers = <0>;
 };
+
 
 
 

@@ -25,7 +25,7 @@ This is a reference list of all key combinations (combos) defined for the Pianto
 | `\`    | `I + O`       | `<8 9>`       | Backslash |
 | `'`    | `Q + W`       | `<1 2>`       | Single quote |
 | `"`    | `U + I`       | `<7 8>`       | Double quote |
-| ```    | `E + R`       | `<3 4>`       | Grave accent |
+| ```    | `T + Y`       | `<5 6>`       | Grave accent |
 | `~`    | `O + P`       | `<9 10>`      | Tilde |
 | `\|`   | `X + C`       | `<26 27>`     | Pipe |
 | `&`    | `, + .`       | `<32 33>`     | Ampersand |
@@ -36,9 +36,10 @@ This is a reference list of all key combinations (combos) defined for the Pianto
 | `=`    | `Q + P`       | `<1 10>`      | Equals sign |
 | `!`    | `S + K`       | `<14 20>`     | Exclamation mark |
 | `?`    | `D + J`       | `<15 19>`     | Question mark |
-| `#`    | `Z + /`       | `<25 34>`     | Hash sign |
+| `#`    | `Z + .`       | `<25 33>`     | Hash sign |
 | `$`    | `X + .`       | `<26 33>`     | Dollar sign |
 | `@`    | `C + ,`       | `<27 32>`     | At sign |
+
 
 
 ## Notes
