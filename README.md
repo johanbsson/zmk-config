@@ -13,33 +13,32 @@ This is a reference list of all key combinations (combos) defined for the Pianto
 
 | Symbol | Keys to Press | Key Positions | Description |
 |--------|---------------|---------------|-------------|
-| `(` | `A + S` | `<13 14>` | Left parenthesis |
-| `)` | `J + K` | `<19 20>` | Right parenthesis |
-| `{` | `D + F` | `<15 16>` | Left curly brace |
-| `}` | `L + Ö` | `<21 22>` | Right curly brace |
-| `[` | `E + R` | `<3 4>` | Left square bracket |
-| `]` | `O + P` | `<9 10>` | Right square bracket |
-| `<` | `Z + X` | `<25 26>` | Less-than sign |
-| `>` | `M + ,` | `<31 32>` | Greater-than sign |
-| `/` | `W + E` | `<2 3>` | Forward slash |
-| `\` | `I + O` | `<8 9>` | Backslash |
-| `'` | `Q + W` | `<1 2>` | Single quote |
-| `"` | `U + I` | `<7 8>` | Double quote |
-| ``` | `Q + W` | `<1 2>` | Grave accent |
-| `~` | `U + I` | `<7 8>` | Tilde |
-| `\|` | `X + C` | `<26 27>` | Pipe |
-| `&` | `, + .` | `<32 33>` | Ampersand |
-| `+` | `W + P` | `<2 10>` | Plus sign |
-| `*` | `E + O` | `<3 9>` | Asterisk |
-| `%` | `R + I` | `<4 8>` | Percent sign |
-| `^` | `R + I` | `<4 8>` | Caret |
-| `=` | `Q + P` | `<1 10>` | Equals sign |
-| `!` | `S + K` | `<14 20>` | Exclamation mark |
-| `?` | `D + J` | `<15 19>` | Question mark |
-| `#` | `Z + /` | `<25 34>` | Hash sign |
-| `$` | `X + .` | `<26 33>` | Dollar sign |
-| `@` | `C + ,` | `<27 32>` | At sign |
-
+| `(`    | `D + F`       | `<15 16>`     | Left parenthesis |
+| `)`    | `J + K`       | `<19 20>`     | Right parenthesis |
+| `{`    | `A + S`       | `<13 14>`     | Left curly brace |
+| `}`    | `L + Ö`       | `<21 22>`     | Right curly brace |
+| `[`    | `S + D`       | `<14 15>`     | Left square bracket |
+| `]`    | `K + L`       | `<20 21>`     | Right square bracket |
+| `<`    | `Z + X`       | `<25 26>`     | Less-than sign |
+| `>`    | `. + -`       | `<33 34>`     | Greater-than sign |
+| `/`    | `W + E`       | `<2 3>`       | Forward slash |
+| `\`    | `I + O`       | `<8 9>`       | Backslash |
+| `'`    | `Q + W`       | `<1 2>`       | Single quote |
+| `"`    | `U + I`       | `<7 8>`       | Double quote |
+| ```    | `Q + W`       | `<1 2>`       | Grave accent |
+| `~`    | `U + I`       | `<7 8>`       | Tilde |
+| `\|`   | `X + C`       | `<26 27>`     | Pipe |
+| `&`    | `, + .`       | `<32 33>`     | Ampersand |
+| `+`    | `W + P`       | `<2 10>`      | Plus sign |
+| `*`    | `E + O`       | `<3 9>`       | Asterisk |
+| `%`    | `R + I`       | `<4 8>`       | Percent sign |
+| `^`    | `R + I`       | `<4 8>`       | Caret |
+| `=`    | `Q + P`       | `<1 10>`      | Equals sign |
+| `!`    | `S + K`       | `<14 20>`     | Exclamation mark |
+| `?`    | `D + J`       | `<15 19>`     | Question mark |
+| `#`    | `Z + /`       | `<25 34>`     | Hash sign |
+| `$`    | `X + .`       | `<26 33>`     | Dollar sign |
+| `@`    | `C + ,`       | `<27 32>`     | At sign |
 
 ## Notes
 - **Key Positions**: Refer to the `default_map` in `piantor_pro_bt-layouts.dtsi` for the physical key layout.

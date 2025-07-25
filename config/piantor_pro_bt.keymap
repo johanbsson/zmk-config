@@ -55,10 +55,11 @@ combos {
 compatible = "zmk,combos";
 
 
-// Press A + S for (
+
+// Press D + F for (
 combo_lparen {
 timeout-ms = <50>;
-key-positions = <13 14>;
+key-positions = <15 16>;
 bindings = <&kp SV_LPAR>;
 layers = <0>;
 };
@@ -71,10 +72,10 @@ bindings = <&kp SV_RPAR>;
 layers = <0>;
 };
 
-// Press D + F for {
+// Press A + S for {
 combo_lbrace {
 timeout-ms = <50>;
-key-positions = <15 16>;
+key-positions = <13 14>;
 bindings = <&kp SV_LBRC>;
 layers = <0>;
 };
@@ -87,18 +88,18 @@ bindings = <&kp SV_RBRC>;
 layers = <0>;
 };
 
-// Press E + R for [
+// Press S + D for [
 combo_lbracket {
 timeout-ms = <50>;
-key-positions = <3 4>;
+key-positions = <14 15>;
 bindings = <&kp SV_LBKT>;
 layers = <0>;
 };
 
-// Press O + P for ]
+// Press K + L for ]
 combo_rbracket {
 timeout-ms = <50>;
-key-positions = <9 10>;
+key-positions = <20 21>;
 bindings = <&kp SV_RBKT>;
 layers = <0>;
 };
@@ -111,10 +112,10 @@ bindings = <&kp SV_LT>;
 layers = <0>;
 };
 
-// Press M + , for >
+// Press . + - for >
 combo_greater {
 timeout-ms = <50>;
-key-positions = <31 32>;
+key-positions = <33 34>;
 bindings = <&kp SV_GT>;
 layers = <0>;
 };
@@ -263,6 +264,8 @@ key-positions = <27 32>;
 bindings = <&kp SV_AT>;
 layers = <0>;
 };
+
+
 
 };
 
