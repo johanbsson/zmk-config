@@ -54,20 +54,6 @@ hold-trigger-on-release;
 combos {
 compatible = "zmk,combos";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Press D + F for (
 combo_lparen {
 timeout-ms = <50>;
@@ -275,14 +261,6 @@ key-positions = <27 32>;
 bindings = <&kp SV_AT>;
 layers = <0>;
 };
-
-
-
-
-
-
-
-
 };
 
 
