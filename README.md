@@ -25,20 +25,21 @@ This is a reference list of all key combinations (combos) defined for the Pianto
 | `\`    | `I + O`       | `<8 9>`       | Backslash |
 | `'`    | `Q + W`       | `<1 2>`       | Single quote |
 | `"`    | `U + I`       | `<7 8>`       | Double quote |
-| ```    | `Q + W`       | `<1 2>`       | Grave accent |
-| `~`    | `U + I`       | `<7 8>`       | Tilde |
+| ```    | `E + R`       | `<3 4>`       | Grave accent |
+| `~`    | `O + P`       | `<9 10>`      | Tilde |
 | `\|`   | `X + C`       | `<26 27>`     | Pipe |
 | `&`    | `, + .`       | `<32 33>`     | Ampersand |
 | `+`    | `W + P`       | `<2 10>`      | Plus sign |
 | `*`    | `E + O`       | `<3 9>`       | Asterisk |
 | `%`    | `R + I`       | `<4 8>`       | Percent sign |
-| `^`    | `R + I`       | `<4 8>`       | Caret |
+| `^`    | `R + U`       | `<4 7>`       | Caret |
 | `=`    | `Q + P`       | `<1 10>`      | Equals sign |
 | `!`    | `S + K`       | `<14 20>`     | Exclamation mark |
 | `?`    | `D + J`       | `<15 19>`     | Question mark |
 | `#`    | `Z + /`       | `<25 34>`     | Hash sign |
 | `$`    | `X + .`       | `<26 33>`     | Dollar sign |
 | `@`    | `C + ,`       | `<27 32>`     | At sign |
+
 
 ## Notes
 - **Key Positions**: Refer to the `default_map` in `piantor_pro_bt-layouts.dtsi` for the physical key layout.
