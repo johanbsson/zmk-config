@@ -6,78 +6,123 @@ My zmk config for my keyboards from keebart.com
 
 https://keymap-drawer.streamlit.app
 
+# My ZMK Config for Keyboards from Keebart.com
 
-# Piantor Pro BT Combo Reference
+[Keymap Drawer](https://keymap-drawer.streamlit.app)
 
-This is a reference list of all key combinations (combos) defined for the Piantor Pro BT keyboard using ZMK firmware with the QWERTY base layer and Swedish locale (`locale/keys_sv.h`). Each combo is triggered by pressing two keys simultaneously on the base layer (`layer 0`) with a 50ms timeout. These combos are designed for ergonomic use (horizontal adjacent fingers or thumb + finger, no same-finger verticals) and output symbols relevant for Java, Python, and Bash development.
+This repository contains my custom ZMK firmware configurations for ergonomic split keyboards like the Piantor Pro BT and Corne Pro BT (or similar variants like Corne 4.1). The keymaps are optimized for QWERTY with Swedish locale support (`locale/keys_sv.h`), focusing on programming symbols for Java, Python, and Bash development. I've recently updated the combos to a new chorded system for better ergonomics and efficiency.
+
+## New Combo System
+
+I've developed a new combo system using chorded key presses (pressing two keys simultaneously within a 50ms timeout). This replaces the previous mappings with a more intuitive, visualization-friendly approach. Combos are divided into single-side (same hand) and dual-side (both hands) for balanced use.
+
+### Design Philosophy
+- **Single-Side Combos**: Use keys from the same hand for paired or isolated symbols (e.g., brackets, quotes). Reduces stretching and allows one-handed input.
+- **Dual-Side Combos**: Span both hands for operators and punctuation, encouraging deliberate, balanced typing.
+- **Key Selection**: Based on adjacent QWERTY pairs (e.g., "qw" for Q+W). Swedish keys like ö are integrated naturally.
+- **Unused Slots ("nop")**: Some dual-side combos are left unmapped for now, to avoid accidents or for future use.
+- **Ergonomics**: Prioritizes home-row and adjacent fingers; no same-finger verticals. Timeout is 50ms—adjust if needed.
+- **Compatibility**: Works on base layer (0). For Swedish macOS users, set input source to U.S. (System Settings > Keyboard > Input Sources) to fix issues like `[` rendering as Å.
+
+### How to Use
+1. Press the two keys in the combo nearly simultaneously.
+2. No modifiers needed—these are pure combos.
+3. Test in a text editor after flashing.
+4. Customize in the `.keymap` file's `combos` section.
+
+### Combo Visualization
+Tables show key pairs (e.g., "qw") and triggered symbols (e.g., "`"). "split" separates left/right hands.
+
+#### Single-Side Combos
+
+| Left Hand |         |         | Split | Right Hand |         |         |
+|-----------|---------|---------|-------|------------|---------|---------|
+| qw("`")  | we("~") | er("'") |       | ui("\"")   | io("<") | op(">") |
+| as("[")  | sd("{") | df("(") |       | jk(")")    | kl("}") | lö("]") |
+| zx("$")  | xc("#") | cv("/") |       | m,("@")    | ,.("\\")| .-("\|")|
+
+#### Dual-Side Combos
+
+| Top Row  |         |         |         |
+|----------|---------|---------|---------|
+| qp("=") | wo("%") | ei("^") | ru("+") |
+| aö("!") | sl("?") | dk("&") | fj("*") |
+| z-("nop")| x.("nop")| c,("nop")| vm("nop")|
+
+Note: `\|` represents the pipe symbol (`|`). "nop" means unmapped.
+
+## Piantor Pro BT Combo Reference (Updated)
+
+These combos apply to the Piantor Pro BT using the new system. Key positions from `piantor_pro_bt-layouts.dtsi` (default_map).
 
 | Symbol | Keys to Press | Key Positions | Description |
 |--------|---------------|---------------|-------------|
-| `(`    | `D + F`       | `<15 16>`     | Left parenthesis |
-| `)`    | `J + K`       | `<19 20>`     | Right parenthesis |
-| `{`    | `A + S`       | `<13 14>`     | Left curly brace |
-| `}`    | `L + Ö`       | `<21 22>`     | Right curly brace |
-| `[`    | `S + D`       | `<14 15>`     | Left square bracket |
-| `]`    | `K + L`       | `<20 21>`     | Right square bracket |
-| `<`    | `Z + X`       | `<25 26>`     | Less-than sign |
-| `>`    | `. + -`       | `<33 34>`     | Greater-than sign |
-| `/`    | `W + E`       | `<2 3>`       | Forward slash |
-| `\`    | `I + O`       | `<8 9>`       | Backslash |
-| `'`    | `Q + W`       | `<1 2>`       | Single quote |
-| `"`    | `U + I`       | `<7 8>`       | Double quote |
-| ```    | `T + Y`       | `<5 6>`       | Grave accent |
-| `~`    | `O + P`       | `<9 10>`      | Tilde |
-| `\|`   | `X + C`       | `<26 27>`     | Pipe |
-| `&`    | `, + .`       | `<32 33>`     | Ampersand |
-| `+`    | `W + P`       | `<2 10>`      | Plus sign |
-| `*`    | `E + O`       | `<3 9>`       | Asterisk |
-| `%`    | `R + I`       | `<4 8>`       | Percent sign |
-| `^`    | `R + U`       | `<4 7>`       | Caret |
-| `=`    | `Q + P`       | `<1 10>`      | Equals sign |
-| `!`    | `S + K`       | `<14 20>`     | Exclamation mark |
-| `?`    | `D + J`       | `<15 19>`     | Question mark |
-| `#`    | `Z + .`       | `<25 33>`     | Hash sign |
-| `$`    | `X + .`       | `<26 33>`     | Dollar sign |
-| `@`    | `C + ,`       | `<27 32>`     | At sign |
+| `     | Q + W        | <1 2>        | Grave accent |
+| ~     | W + E        | <2 3>        | Tilde |
+| '     | E + R        | <3 4>        | Single quote |
+| [     | A + S        | <13 14>      | Left square bracket |
+| {     | S + D        | <14 15>      | Left curly brace |
+| (     | D + F        | <15 16>      | Left parenthesis |
+| $     | Z + X        | <25 26>      | Dollar sign |
+| #     | X + C        | <26 27>      | Hash sign |
+| /     | C + V        | <27 28>      | Forward slash |
+| "     | U + I        | <7 8>        | Double quote |
+| <     | I + O        | <8 9>        | Less-than sign |
+| >     | O + P        | <9 10>       | Greater-than sign |
+| )     | J + K        | <19 20>      | Right parenthesis |
+| }     | K + L        | <20 21>      | Right curly brace |
+| ]     | L + Ö        | <21 22>      | Right square bracket |
+| @     | M + ,        | <31 32>      | At sign |
+| \     | , + .        | <32 33>      | Backslash |
+| \|    | . + -        | <33 34>      | Pipe |
+| =     | Q + P        | <1 10>       | Equals sign |
+| %     | W + O        | <2 9>        | Percent sign |
+| ^     | E + I        | <3 8>        | Caret |
+| +     | R + U        | <4 7>        | Plus sign |
+| !     | A + Ö        | <13 22>      | Exclamation mark |
+| ?     | S + L        | <14 21>      | Question mark |
+| &     | D + J        | <15 19>      | Ampersand |
+| *     | F + K        | <16 20>      | Asterisk |
 
+## Corne Pro BT Combo Reference (Updated)
 
+Adapted for Corne (including 4.1 variants with no middle thumb keys). Key positions from your provided DTSI (default_map). Positions may shift slightly; verify in your keymap.
+
+| Symbol | Keys to Press | Key Positions | Description |
+|--------|---------------|---------------|-------------|
+| `     | Q + W        | <1 2>        | Grave accent |
+| ~     | W + E        | <2 3>        | Tilde |
+| '     | E + R        | <3 4>        | Single quote |
+| [     | A + S        | <15 16>      | Left square bracket |
+| {     | S + D        | <16 17>      | Left curly brace |
+| (     | D + F        | <17 18>      | Left parenthesis |
+| $     | Z + X        | <29 30>      | Dollar sign |
+| #     | X + C        | <30 31>      | Hash sign |
+| /     | C + V        | <31 32>      | Forward slash |
+| "     | U + I        | <9 10>       | Double quote |
+| <     | I + O        | <10 11>      | Less-than sign |
+| >     | O + P        | <11 12>      | Greater-than sign |
+| )     | J + K        | <23 24>      | Right parenthesis |
+| }     | K + L        | <24 25>      | Right curly brace |
+| ]     | L + Ö        | <25 26>      | Right square bracket |
+| @     | M + ,        | <35 36>      | At sign |
+| \     | , + .        | <36 37>      | Backslash |
+| \|    | . + /        | <37 38>      | Pipe (adjust if - is used) |
+| =     | Q + P        | <1 12>       | Equals sign |
+| %     | W + O        | <2 11>       | Percent sign |
+| ^     | E + I        | <3 10>       | Caret |
+| +     | R + U        | <4 9>        | Plus sign |
+| !     | A + Ö        | <15 26>      | Exclamation mark |
+| ?     | S + L        | <16 25>      | Question mark |
+| &     | D + J        | <17 23>      | Ampersand |
+| *     | F + K        | <18 24>      | Asterisk |
 
 ## Notes
-- **Key Positions**: Refer to the `default_map` in `piantor_pro_bt-layouts.dtsi` for the physical key layout.
-- **Swedish Locale**: Uses macros like `SV_SQT`, `SV_DQT`, `SV_EXCL`, etc., from `locale/keys_sv.h` to ensure correct symbol output on a Swedish keyboard layout.
-- **Ergonomics**: Combos are designed for horizontal adjacent fingers (e.g., `J + K`) or thumb + finger (e.g., `V + SPC`) to avoid same-finger vertical presses.
-- **Testing**: Use a text editor or keyboard tester to verify outputs. Ensure your system is set to a Swedish keyboard layout for correct symbol rendering.
-- **Home-Row Mods**: Combos like `S + D` and `A + S` involve home-row mod keys. The 50ms timeout helps distinguish them from hold-tap behaviors, but adjust `timeout-ms` if needed.
+- **Key Positions**: Refer to the `default_map` in your keyboard's `.dtsi` file for exact layout.
+- **Swedish Locale**: Uses macros like `SV_SQT`, `SV_DQT`, etc., from `locale/keys_sv.h`. Set OS to U.S. input for consistent symbols.
+- **Ergonomics**: Horizontal adjacent fingers or thumb + finger; no same-finger verticals.
+- **Testing**: Verify in a text editor with Swedish keyboard layout enabled.
+- **Home-Row Mods**: Combos like `as` involve mods; 50ms timeout distinguishes from hold-taps—adjust if needed.
+- **Changes from Old System**: New mappings are more symmetric and visualization-based; old ones (e.g., D+F for ()) are replaced for better flow.
 
-## QWERTY Base Layer with Combos
-
-# Corne Pro BT Combo Reference
-
-| Symbol | Keys to Press | Key Positions | Description |
-|--------|---------------|---------------|-------------|
-| `(`    | `D + F`       | `<17 18>`     | Left parenthesis |
-| `)`    | `J + K`       | `<23 24>`     | Right parenthesis |
-| `{`    | `A + S`       | `<15 16>`     | Left curly brace |
-| `}`    | `L + Ö`       | `<25 26>`     | Right curly brace |
-| `[`    | `S + D`       | `<16 17>`     | Left square bracket |
-| `]`    | `K + L`       | `<24 25>`     | Right square bracket |
-| `<`    | `Z + X`       | `<29 30>`     | Less-than sign |
-| `>`    | `. + -`       | `<37 38>`     | Greater-than sign |
-| `/`    | `W + E`       | `<2 3>`       | Forward slash |
-| `\`    | `I + O`       | `<10 11>`     | Backslash |
-| `'`    | `Q + W`       | `<1 2>`       | Single quote |
-| `"`    | `U + I`       | `<9 10>`      | Double quote |
-| ```    | `Q + W`       | `<1 2>`       | Grave accent |
-| `~`    | `U + I`       | `<9 10>`      | Tilde |
-| `\|`   | `X + C`       | `<30 31>`     | Pipe |
-| `&`    | `, + .`       | `<36 37>`     | Ampersand |
-| `+`    | `W + P`       | `<2 12>`      | Plus sign |
-| `*`    | `E + O`       | `<3 11>`      | Asterisk |
-| `%`    | `R + I`       | `<4 10>`      | Percent sign |
-| `^`    | `R + I`       | `<4 10>`      | Caret |
-| `=`    | `Q + P`       | `<1 12>`      | Equals sign |
-| `!`    | `S + K`       | `<16 24>`     | Exclamation mark |
-| `?`    | `D + J`       | `<17 23>`     | Question mark |
-| `#`    | `Z + /`       | `<29 38>`     | Hash sign |
-| `$`    | `X + .`       | `<30 37>`     | Dollar sign |
-| `@`    | `C + ,`       | `<31 36>`     | At sign |
+For full configs, see the `.keymap` files. Contributions or issues welcome!
