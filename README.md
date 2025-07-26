@@ -1,7 +1,12 @@
 My zmk config for my keyboards from keebart.com
 
 
+
+# The corne layout
 ![](my_keymap.png)
+
+
+# My piantor layout
 ![](/home/johan/jbexp/zmk-config/piantor.svg)
 
 https://keymap-drawer.streamlit.app
