@@ -230,11 +230,6 @@
   default_layer {
   display-name = "QWERTY";
   
-  // --------------------------------------------------------------------------------
-  // | TAB |  Q      | W      | E      | R      |  T  |  |  |  Y  | U      | I      | O      | P      | Å    |
-  // | ESC |  GUI(s) | ALT(a) | CTR(d) | SFT(f) |  G  |  |  |  H  | SFT(j) | CTR(k) | ALT(ö) | GUI(l) | Ä    |
-  // | CPS |  Z      | X      | C      | V      |  B  |     |  N  | M      | ,      | .      | -      | BSPC |
-  //                          | NAV    | NMR    | SPC |     | ENT | SYM    |        |
   bindings = <
   &kp TAB  &kp Q       &kp W       &kp E        &kp R        &kp T  &kp Y   &kp U        &kp I        &kp O       &kp P                 &kp SV_A_RING
   &kp ESC  &hml LGUI A &hml LALT S &hml LCTRL D &hml LSHFT F &kp G  &kp H   &hmr RSHFT J &hmr RCTRL K &hmr RALT L &hmr RGUI SV_O_UMLAUT &kp SV_A_UMLAUT
@@ -246,29 +241,17 @@
   lower_layer {
   
   display-name = "NUM";
-  // -----------------------------------------------------------------------------------------
-  
-  //  | TAB   |  1   |  2   |  3   |  4   |  5   |   |    |  6   |  7   |  8   |  9   |  0   | BSPC |
-  //  | CTRL  | BT0  | BT1  | BT2  | BT3  | BT4  |   |   | LEFT | DOWN |  UP  | RIGHT| HOME | END  |
-  //  | SHFT  | BTCLR| RGB  | RSET |BOOT  |UNLCK |       |       |PGUP |PGDN  |      |      |      |      |
-  //                               | GUI  |      | SPACE|        | RET |      | ALT |
-  
   bindings = <
   &trans &kp N1        &kp N2        &kp N3       &kp N4       &kp N5         &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp BSPC
   &trans &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp HOME    &kp END
   &trans &bt BT_CLR    &rgb_ug RGB_TOG &sys_reset &bootloader  &studio_unlock                 &kp PG_UP   &kp PG_DN   &trans      &trans      &trans      &trans
   &kp LGUI     &trans        &kp SPACE                         &kp RET     &trans      &kp RALT
   >;
-
  };
   
   raise_layer {
   display-name = "SYM";
   
-  // |  |  !  |  @  |  #  |  $  |  %  |  |  | | |  ^  |  &  |  (  |  )  |  *  | |
-  // |  |  '  |  "  |  ~  |  `  |  =  |  |  | | |  -  |  +  |  [  |  ]  |  \  |  "|"   |
-  // |  |  <  |  >  |     |     |  _  |       | |     |  ?  |     |  {  |  }  |  /  |      |
-  // | GUI |     | SPACE || RET |     | ALT |
   
   bindings = <
   &trans &kp SV_EXCL   &kp SV_AT     &kp SV_HASH   &kp SV_DLLR   &kp SV_PRCNT   &kp SV_CARET  &kp SV_AMPS   &kp SV_LPAR  &kp SV_RPAR  &kp SV_ASTRK  &trans
@@ -277,15 +260,9 @@
   &kp LGUI  &trans        &kp SPACE                          &kp RET       &trans       &kp RALT
   >;
  };
-  
-  
   extra_layer_1 {
   display-name = "NAV";
   
-  // |  |      | PGUP | HOME |      |     ||      |      ||      | END  |      |      |      |      |
-  // |  | SHFT | ALT  | C-A  | C-E  |     ||      |      || ←    | ↓    | ↑    | →    | RET  |      |
-  // |  |      |      | ESC  | BSPC | DEL ||                || TAB | SPACE |      |      |      |
-  // |  |      | SPACE || RET  |      |     |
   
   bindings = <
   &trans    &trans   &kp PG_UP   &kp HOME  &trans    &trans      &trans   &kp END   &trans   &trans   &trans   &trans
@@ -294,59 +271,6 @@
   &trans    &trans   &kp SPACE                       &kp RET  &trans   &trans
   >;
  };
-  
-  
-  
-  
-  
-  extra_layer_2 {
-  display-name = "EXTRA 2";
-  bindings = <
-  &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-  &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-  &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-  &trans &trans &trans  &trans &trans &trans
-  >;
- };
-  
-  extra_layer_3 {
-  display-name = "EXTRA 3";
-  bindings = <
-  &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-  &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-  &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-  &trans &trans &trans  &trans &trans &trans
-  >;
- };
-  
-  extra_layer_4 {
-  display-name = "EXTRA 4";
-  bindings = <
-  &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-  &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-  &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-  &trans &trans &trans  &trans &trans &trans
-  >;
- };
-  
-  extra_layer_5 {
-  display-name = "EXTRA 5";
-  bindings = <
-  &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-  &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-  &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-  &trans &trans &trans  &trans &trans &trans
-  >;
- };
-  
-  extra_layer_6 {
-  display-name = "EXTRA 6";
-  bindings = <
-  &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-  &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-  &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-  &trans &trans &trans  &trans &trans &trans
-  >;
- };
+
  };
  };
