@@ -7,7 +7,7 @@ My zmk config for my keyboards from keebart.com
 
 
 # My piantor layout
-![](/home/johan/jbexp/zmk-config/piantor.svg)
+![](piantor.svg)
 
 https://keymap-drawer.streamlit.app
 
