@@ -260,6 +260,7 @@
   &kp LGUI  &trans        &kp SPACE                          &kp RET       &trans       &kp RALT
   >;
  };
+  
   extra_layer_1 {
   display-name = "NAV";
   
@@ -271,6 +272,7 @@
   &trans    &trans   &kp SPACE                       &kp RET  &trans   &trans
   >;
  };
+
 
  };
  };
