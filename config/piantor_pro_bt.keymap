@@ -55,166 +55,165 @@
    combos {
    compatible = "zmk,combos";
    
-   // Single side combos based on the new table
-   combo_grave {
-   timeout-ms = <50>;
-   key-positions = <1 2>; // qw(`)
-   bindings = <&kp SV_GRAVE>;
-   layers = <0>;
-   };
-   combo_tilde {
-   timeout-ms = <50>;
-   key-positions = <2 3>; // we(~)
-   bindings = <&kp SV_TILDE>;
-   layers = <0>;
-   };
-   combo_less {
-   timeout-ms = <50>;
-   key-positions = <8 9>; // io(<)
-   bindings = <&kp SV_LT>;
-   layers = <0>;
-   };
-   combo_greater {
-   timeout-ms = <50>;
-   key-positions = <9 10>; // op(>)
-   bindings = <&kp SV_GT>;
-   layers = <0>;
-   };
-   combo_squote {
-   timeout-ms = <50>;
-   key-positions = <3 4>; // er(')
-   bindings = <&kp SV_SQT>;
-   layers = <0>;
-   };
-   combo_dquote {
-   timeout-ms = <50>;
-   key-positions = <7 8>; // ui(")
-   bindings = <&kp SV_DQT>;
-   layers = <0>;
-   };
-   combo_lbracket {
-   timeout-ms = <50>;
-   key-positions = <13 14>; // as([)
-   bindings = <&kp SV_LBKT>;
-   layers = <0>;
-   };
-   combo_lbrace {
-   timeout-ms = <50>;
-   key-positions = <14 15>; // sd({)
-   bindings = <&kp SV_LBRC>;
-   layers = <0>;
-   };
-   combo_lparen {
-   timeout-ms = <50>;
-   key-positions = <15 16>; // df(()
-   bindings = <&kp SV_LPAR>;
-   layers = <0>;
-   };
-   combo_rparen {
-   timeout-ms = <50>;
-   key-positions = <19 20>; // jk())
-   bindings = <&kp SV_RPAR>;
-   layers = <0>;
-   };
-   combo_rbrace {
-   timeout-ms = <50>;
-   key-positions = <20 21>; // kl(})
-   bindings = <&kp SV_RBRC>;
-   layers = <0>;
-   };
-   combo_rbracket {
-   timeout-ms = <50>;
-   key-positions = <21 22>; // lö(])
-   bindings = <&kp SV_RBKT>;
-   layers = <0>;
-   };
-   combo_dollar {
-   timeout-ms = <50>;
-   key-positions = <25 26>; // zx($)
-   bindings = <&kp SV_DLLR>;
-   layers = <0>;
-   };
-   combo_hash {
-   timeout-ms = <50>;
-   key-positions = <26 27>; // xc(#)
-   bindings = <&kp SV_HASH>;
-   layers = <0>;
-   };
-   combo_fslash {
-   timeout-ms = <50>;
-   key-positions = <27 28>; // cv(/)
-   bindings = <&kp SV_FSLH>;
-   layers = <0>;
-   };
-   combo_bslash {
-   timeout-ms = <50>;
-   key-positions = <32 33>; // ,.()
-   bindings = <&kp SV_BSLH>;
-   layers = <0>;
-   };
-   combo_at {
-   timeout-ms = <50>;
-   key-positions = <31 32>; // m,(@)
-   bindings = <&kp SV_AT>;
-   layers = <0>;
-   };
-   combo_pipe {
-   timeout-ms = <50>;
-   key-positions = <33 34>; // .-(|)
-   bindings = <&kp SV_PIPE>;
-   layers = <0>;
-   };
-
-   // Dual side combos (kept as previous suggestion)
-   combo_equal {
-   timeout-ms = <50>;
-   key-positions = <1 10>; // qp(=)
-   bindings = <&kp SV_EQUAL>;
-   layers = <0>;
-   };
-   combo_percent {
-   timeout-ms = <50>;
-   key-positions = <2 9>; // wo(%)
-   bindings = <&kp SV_PRCNT>;
-   layers = <0>;
-   };
-   combo_caret {
-   timeout-ms = <50>;
-   key-positions = <3 8>; // ei(^)
-   bindings = <&kp SV_CARET>;
-   layers = <0>;
-   };
-   combo_plus {
-   timeout-ms = <50>;
-   key-positions = <4 7>; // ru(+)
-   bindings = <&kp SV_PLUS>;
-   layers = <0>;
-   };
-   combo_exclam {
-   timeout-ms = <50>;
-   key-positions = <13 22>; // aö(!)
-   bindings = <&kp SV_EXCL>;
-   layers = <0>;
-   };
-   combo_question {
-   timeout-ms = <50>;
-   key-positions = <14 21>; // sl(?)
-   bindings = <&kp SV_QMARK>;
-   layers = <0>;
-   };
-   combo_ampersand {
-   timeout-ms = <50>;
-   key-positions = <15 20>; // dk(&)
-   bindings = <&kp SV_AMPS>;
-   layers = <0>;
-   };
-   combo_asterisk {
-   timeout-ms = <50>;
-   key-positions = <16 19>; // fj(*)
-   bindings = <&kp SV_ASTRK>;
-   layers = <0>;
-   };
-
+  // Single side combos based on the new table
+    combo_grave {
+    timeout-ms = <50>;
+    key-positions = <1 2>; // qw(`)
+    bindings = <&kp SV_GRAVE>;
+    layers = <0>;
+};
+    combo_tilde {
+    timeout-ms = <50>;
+    key-positions = <2 3>; // we(~)
+    bindings = <&kp SV_TILDE>;
+    layers = <0>;
+};
+    combo_less {
+    timeout-ms = <50>;
+    key-positions = <8 9>; // io(<)
+    bindings = <&kp SV_LT>;
+    layers = <0>;
+};
+    combo_greater {
+    timeout-ms = <50>;
+    key-positions = <9 10>; // op(>)
+    bindings = <&kp SV_GT>;
+    layers = <0>;
+};
+    combo_squote {
+    timeout-ms = <50>;
+    key-positions = <3 4>; // er(')
+    bindings = <&kp SV_SQT>;
+    layers = <0>;
+};
+    combo_dquote {
+    timeout-ms = <50>;
+    key-positions = <7 8>; // ui(")
+    bindings = <&kp SV_DQT>;
+    layers = <0>;
+};
+    combo_lbracket {
+    timeout-ms = <50>;
+    key-positions = <13 14>; // as([)
+    bindings = <&kp SV_LBKT>;
+    layers = <0>;
+};
+    combo_lbrace {
+    timeout-ms = <50>;
+    key-positions = <14 15>; // sd({)
+    bindings = <&kp SV_LBRC>;
+    layers = <0>;
+};
+    combo_lparen {
+    timeout-ms = <50>;
+    key-positions = <15 16>; // df(()
+    bindings = <&kp SV_LPAR>;
+    layers = <0>;
+};
+    combo_rparen {
+    timeout-ms = <50>;
+    key-positions = <19 20>; // jk())
+    bindings = <&kp SV_RPAR>;
+    layers = <0>;
+};
+    combo_rbrace {
+    timeout-ms = <50>;
+    key-positions = <20 21>; // kl(})
+    bindings = <&kp SV_RBRC>;
+    layers = <0>;
+};
+    combo_rbracket {
+    timeout-ms = <50>;
+    key-positions = <21 22>; // lö(])
+    bindings = <&kp SV_RBKT>;
+    layers = <0>;
+};
+    combo_dollar {
+    timeout-ms = <50>;
+    key-positions = <25 26>; // zx($)
+    bindings = <&kp SV_DLLR>;
+    layers = <0>;
+};
+    combo_hash {
+    timeout-ms = <50>;
+    key-positions = <26 27>; // xc(#)
+    bindings = <&kp SV_HASH>;
+    layers = <0>;
+};
+    combo_fslash {
+    timeout-ms = <50>;
+    key-positions = <27 28>; // cv(/)
+    bindings = <&kp SV_FSLH>;
+    layers = <0>;
+};
+    combo_bslash {
+    timeout-ms = <50>;
+    key-positions = <32 33>; // ,.()
+    bindings = <&kp SV_BSLH>;
+    layers = <0>;
+};
+    combo_at {
+    timeout-ms = <50>;
+    key-positions = <31 32>; // m,(@)
+    bindings = <&kp SV_AT>;
+    layers = <0>;
+};
+    combo_pipe {
+    timeout-ms = <50>;
+    key-positions = <33 34>; // .-(|)
+    bindings = <&kp SV_PIPE>;
+    layers = <0>;
+};
+    
+    // Dual side combos (kept as previous suggestion)
+    combo_equal {
+    timeout-ms = <50>;
+    key-positions = <1 10>; // qp(=)
+    bindings = <&kp SV_EQUAL>;
+    layers = <0>;
+};
+    combo_percent {
+    timeout-ms = <50>;
+    key-positions = <2 9>; // wo(%)
+    bindings = <&kp SV_PRCNT>;
+    layers = <0>;
+};
+    combo_caret {
+    timeout-ms = <50>;
+    key-positions = <3 8>; // ei(^)
+    bindings = <&kp SV_CARET>;
+    layers = <0>;
+};
+    combo_plus {
+    timeout-ms = <50>;
+    key-positions = <4 7>; // ru(+)
+    bindings = <&kp SV_PLUS>;
+    layers = <0>;
+};
+    combo_exclam {
+    timeout-ms = <50>;
+    key-positions = <13 22>; // aö(!)
+    bindings = <&kp SV_EXCL>;
+    layers = <0>;
+};
+    combo_question {
+    timeout-ms = <50>;
+    key-positions = <14 21>; // sl(?)
+    bindings = <&kp SV_QMARK>;
+    layers = <0>;
+};
+    combo_ampersand {
+    timeout-ms = <50>;
+    key-positions = <15 20>; // dk(&)
+    bindings = <&kp SV_AMPS>;
+    layers = <0>;
+};
+    combo_asterisk {
+    timeout-ms = <50>;
+    key-positions = <16 19>; // fj(*)
+    bindings = <&kp SV_ASTRK>;
+    layers = <0>;
+};
 
    };
   
