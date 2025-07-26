@@ -50,224 +50,174 @@
   hold-trigger-on-release;
  };
  };
+   
+   
+   combos {
+   compatible = "zmk,combos";
+   
+   // Single side combos (left hand)
+   combo_grave {
+   timeout-ms = <50>;
+   key-positions = <1 2>; // Q + W
+   bindings = <&kp SV_GRAVE>;
+   layers = <0>;
+   };
+   combo_tilde {
+   timeout-ms = <50>;
+   key-positions = <2 3>; // W + E
+   bindings = <&kp SV_TILDE>;
+   layers = <0>;
+   };
+   combo_squote {
+   timeout-ms = <50>;
+   key-positions = <3 4>; // E + R
+   bindings = <&kp SV_SQT>;
+   layers = <0>;
+   };
+   combo_lbracket {
+   timeout-ms = <50>;
+   key-positions = <13 14>; // A + S
+   bindings = <&kp SV_LBKT>;
+   layers = <0>;
+   };
+   combo_lbrace {
+   timeout-ms = <50>;
+   key-positions = <14 15>; // S + D
+   bindings = <&kp SV_LBRC>;
+   layers = <0>;
+   };
+   combo_lparen {
+   timeout-ms = <50>;
+   key-positions = <15 16>; // D + F
+   bindings = <&kp SV_LPAR>;
+   layers = <0>;
+   };
+   combo_dollar {
+   timeout-ms = <50>;
+   key-positions = <25 26>; // Z + X
+   bindings = <&kp SV_DLLR>;
+   layers = <0>;
+   };
+   combo_hash {
+   timeout-ms = <50>;
+   key-positions = <26 27>; // X + C
+   bindings = <&kp SV_HASH>;
+   layers = <0>;
+   };
+   combo_fslash {
+   timeout-ms = <50>;
+   key-positions = <27 28>; // C + V
+   bindings = <&kp SV_FSLH>;
+   layers = <0>;
+   };
+   
+   // Single side combos (right hand)
+   combo_dquote {
+   timeout-ms = <50>;
+   key-positions = <7 8>; // U + I
+   bindings = <&kp SV_DQT>;
+   layers = <0>;
+   };
+   combo_less {
+   timeout-ms = <50>;
+   key-positions = <8 9>; // I + O
+   bindings = <&kp SV_LT>;
+   layers = <0>;
+   };
+   combo_greater {
+   timeout-ms = <50>;
+   key-positions = <9 10>; // O + P
+   bindings = <&kp SV_GT>;
+   layers = <0>;
+   };
+   combo_rparen {
+   timeout-ms = <50>;
+   key-positions = <19 20>; // J + K
+   bindings = <&kp SV_RPAR>;
+   layers = <0>;
+   };
+   combo_rbrace {
+   timeout-ms = <50>;
+   key-positions = <20 21>; // K + L
+   bindings = <&kp SV_RBRC>;
+   layers = <0>;
+   };
+   combo_rbracket {
+   timeout-ms = <50>;
+   key-positions = <21 22>; // L + Ö
+   bindings = <&kp SV_RBKT>;
+   layers = <0>;
+   };
+   combo_at {
+   timeout-ms = <50>;
+   key-positions = <31 32>; // M + ,
+   bindings = <&kp SV_AT>;
+   layers = <0>;
+   };
+   combo_bslash {
+   timeout-ms = <50>;
+   key-positions = <32 33>; // , + .
+   bindings = <&kp SV_BSLH>;
+   layers = <0>;
+   };
+   combo_pipe {
+   timeout-ms = <50>;
+   key-positions = <33 34>; // . + -
+   bindings = <&kp SV_PIPE>;
+   layers = <0>;
+   };
+   
+   // Dual side combos
+   combo_equal {
+   timeout-ms = <50>;
+   key-positions = <1 10>; // Q + P
+   bindings = <&kp SV_EQUAL>;
+   layers = <0>;
+   };
+   combo_percent {
+   timeout-ms = <50>;
+   key-positions = <2 9>; // W + O
+   bindings = <&kp SV_PRCNT>;
+   layers = <0>;
+   };
+   combo_caret {
+   timeout-ms = <50>;
+   key-positions = <3 8>; // E + I
+   bindings = <&kp SV_CARET>;
+   layers = <0>;
+   };
+   combo_plus {
+   timeout-ms = <50>;
+   key-positions = <4 7>; // R + U
+   bindings = <&kp SV_PLUS>;
+   layers = <0>;
+   };
+   combo_exclam {
+   timeout-ms = <50>;
+   key-positions = <13 22>; // A + Ö
+   bindings = <&kp SV_EXCL>;
+   layers = <0>;
+   };
+   combo_question {
+   timeout-ms = <50>;
+   key-positions = <14 21>; // S + L
+   bindings = <&kp SV_QMARK>;
+   layers = <0>;
+   };
+   combo_asterisk {
+   timeout-ms = <50>;
+   key-positions = <15 19>; // D + J
+   bindings = <&kp SV_ASTRK>;
+   layers = <0>;
+   };
+   combo_ampersand {
+   timeout-ms = <50>;
+   key-positions = <16 20>; // F + K
+   bindings = <&kp SV_AMPS>;
+   layers = <0>;
+   };
+   };
   
-  combos {
-  compatible = "zmk,combos";
-  
-  
-  
-  // Press D + F for (
-  combo_lparen {
-  timeout-ms = <50>;
-  key-positions = <15 16>;
-  bindings = <&kp SV_LPAR>;
-  layers = <0>;
- };
-  
-  // Press J + K for )
-  combo_rparen {
-  timeout-ms = <50>;
-  key-positions = <19 20>;
-  bindings = <&kp SV_RPAR>;
-  layers = <0>;
- };
-  
-  // Press A + S for {
-  combo_lbrace {
-  timeout-ms = <50>;
-  key-positions = <13 14>;
-  bindings = <&kp SV_LBRC>;
-  layers = <0>;
- };
-  
-  // Press L + Ö for }
-  combo_rbrace {
-  timeout-ms = <50>;
-  key-positions = <21 22>;
-  bindings = <&kp SV_RBRC>;
-  layers = <0>;
- };
-  
-  // Press S + D for [
-  combo_lbracket {
-  timeout-ms = <50>;
-  key-positions = <14 15>;
-  bindings = <&kp SV_LBKT>;
-  layers = <0>;
- };
-  
-  // Press K + L for ]
-  combo_rbracket {
-  timeout-ms = <50>;
-  key-positions = <20 21>;
-  bindings = <&kp SV_RBKT>;
-  layers = <0>;
- };
-  
-  // Press Z + X for <
-  combo_less {
-  timeout-ms = <50>;
-  key-positions = <25 26>;
-  bindings = <&kp SV_LT>;
-  layers = <0>;
- };
-  
-  // Press . + - for >
-  combo_greater {
-  timeout-ms = <50>;
-  key-positions = <33 34>;
-  bindings = <&kp SV_GT>;
-  layers = <0>;
- };
-  
-  // Press W + E for /
-  combo_fslash {
-  timeout-ms = <50>;
-  key-positions = <2 3>;
-  bindings = <&kp SV_FSLH>;
-  layers = <0>;
- };
-  
-  // Press I + O for
-  
-  combo_bslash {
-  timeout-ms = <50>;
-  key-positions = <8 9>;
-  bindings = <&kp SV_BSLH>;
-  layers = <0>;
- };
-  
-  // Press Q + W for '
-  combo_squote {
-  timeout-ms = <50>;
-  key-positions = <1 2>;
-  bindings = <&kp SV_SQT>;
-  layers = <0>;
- };
-  
-  // Press U + I for "
-  combo_dquote {
-  timeout-ms = <50>;
-  key-positions = <7 8>;
-  bindings = <&kp SV_DQT>;
-  layers = <0>;
- };
-  
-  // Press Q + W for `
-  combo_grave {
-  timeout-ms = <50>;
-  key-positions = <1 2>;
-  bindings = <&kp SV_GRAVE>;
-  layers = <0>;
- };
-  
-  // Press U + I for ~
-  combo_tilde {
-  timeout-ms = <50>;
-  key-positions = <7 8>;
-  bindings = <&kp SV_TILDE>;
-  layers = <0>;
- };
-  
-  // Press X + C for |
-  combo_pipe {
-  timeout-ms = <50>;
-  key-positions = <26 27>;
-  bindings = <&kp SV_PIPE>;
-  layers = <0>;
- };
-  
-  // Press , + . for &
-  combo_ampersand {
-  timeout-ms = <50>;
-  key-positions = <32 33>;
-  bindings = <&kp SV_AMPS>;
-  layers = <0>;
- };
-  
-  // Press W + P for +
-  combo_plus {
-  timeout-ms = <50>;
-  key-positions = <2 10>;
-  bindings = <&kp SV_PLUS>;
-  layers = <0>;
- };
-  
-  // Press E + O for *
-  combo_asterisk {
-  timeout-ms = <50>;
-  key-positions = <3 9>;
-  bindings = <&kp SV_ASTRK>;
-  layers = <0>;
- };
-  
-  // Press R + I for %
-  combo_percent {
-  timeout-ms = <50>;
-  key-positions = <4 8>;
-  bindings = <&kp SV_PRCNT>;
-  layers = <0>;
- };
-  
-  // Press R + I for ^
-  combo_caret {
-  timeout-ms = <50>;
-  key-positions = <4 8>;
-  bindings = <&kp SV_CARET>;
-  layers = <0>;
- };
-  
-  // Press Q + P for =
-  combo_equal {
-  timeout-ms = <50>;
-  key-positions = <1 10>;
-  bindings = <&kp SV_EQUAL>;
-  layers = <0>;
- };
-  
-  // Press S + K for !
-  combo_exclam {
-  timeout-ms = <50>;
-  key-positions = <14 20>;
-  bindings = <&kp SV_EXCL>;
-  layers = <0>;
- };
-  
-  // Press D + J for ?
-  combo_question {
-  timeout-ms = <50>;
-  key-positions = <15 19>;
-  bindings = <&kp SV_QMARK>;
-  layers = <0>;
- };
-  
-  // Press Z + / for #
-  combo_hash {
-  timeout-ms = <50>;
-  key-positions = <25 34>;
-  bindings = <&kp SV_HASH>;
-  layers = <0>;
- };
-  
-  // Press X + . for $
-  combo_dollar {
-  timeout-ms = <50>;
-  key-positions = <26 33>;
-  bindings = <&kp SV_DLLR>;
-  layers = <0>;
- };
-  
-  // Press C + , for @
-  combo_at {
-  timeout-ms = <50>;
-  key-positions = <27 32>;
-  bindings = <&kp SV_AT>;
-  layers = <0>;
- };
-
-
-
- };
   
   
   
