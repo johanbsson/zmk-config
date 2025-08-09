@@ -38,57 +38,59 @@ I've developed a new combo system using chorded key presses (pressing two keys s
 ### Combo Visualization
 Tables show key pairs (e.g., "qw") and triggered symbols (e.g., "`"). "split" separates left/right hands.
 
-#### Single-Side Combos
-
-| Left Hand |         |         | Split | Right Hand |         |         |    |
-|-----------|---------|---------|-------|------------|---------|---------|----|
-| qw("`")   | we("~") | io("<") |       | op(">")    | er("'") | ui("\"")|    |
-| as("[")   | sd("{") | df("(") |       | jk(")")    | kl("}") | lö("]") |    |
-| zx("$")   | xc("#") | cv("/") |       | ,.("\\")   | m,("@") | .-("\|")|    |
 
 
-#### Dual-Side Combos
+### Single-Side Combos
 
-| Top Row  |         |         |         |
-|----------|---------|---------|---------|
-| qp("=") | wo("%") | ei("^") | ru("+") |
-| aö("!") | sl("?") | dk("&") | fj("*") |
-| z-("nop")| x.("nop")| c,("nop")| vm("nop")|
+| Left Hand       |               |               | Split | Right Hand      |               |               |    |
+|-----------------|---------------|---------------|-------|-----------------|---------------|---------------|----|
+| qw("`")         | we("~")       | er("'")        |       | ui("\"")        | io("<")       | op(">")       |    |
+| as("[")         | sd("{")       | df("(")        |       | jk(")")         | kl("}")       | lö("]")       |    |
+| zx("$")         | xc("#")       | cv("/")        |       | m,("@")         | ,.( "\\")     | .-("\|")      |    |
 
-Note: `\|` represents the pipe symbol (`|`). "nop" means unmapped.
+---
 
-## Piantor Pro BT Combo Reference (Updated)
+### Dual-Side Combos
 
-These combos apply to the Piantor Pro BT using the new system. Key positions from `piantor_pro_bt-layouts.dtsi` (default_map).
+| Top Row         |               |               |               |
+|-----------------|---------------|---------------|---------------|
+| qp("=")         | wo("%")       | ei("^")       | ru("+")       |
+| aö("!")         | sl("?")       | dk("&")       | fj("*")       |
 
-| Symbol | Keys to Press | Key Positions | Description |
-|--------|---------------|---------------|-------------|
-| `     | Q + W        | <1 2>        | Grave accent |
-| ~     | W + E        | <2 3>        | Tilde |
-| '     | E + R        | <3 4>        | Single quote |
-| [     | A + S        | <13 14>      | Left square bracket |
-| {     | S + D        | <14 15>      | Left curly brace |
-| (     | D + F        | <15 16>      | Left parenthesis |
-| $     | Z + X        | <25 26>      | Dollar sign |
-| #     | X + C        | <26 27>      | Hash sign |
-| /     | C + V        | <27 28>      | Forward slash |
-| "     | U + I        | <7 8>        | Double quote |
-| <     | I + O        | <8 9>        | Less-than sign |
-| >     | O + P        | <9 10>       | Greater-than sign |
-| )     | J + K        | <19 20>      | Right parenthesis |
-| }     | K + L        | <20 21>      | Right curly brace |
-| ]     | L + Ö        | <21 22>      | Right square bracket |
-| @     | M + ,        | <31 32>      | At sign |
-| \     | , + .        | <32 33>      | Backslash |
-| \|    | . + -        | <33 34>      | Pipe |
-| =     | Q + P        | <1 10>       | Equals sign |
-| %     | W + O        | <2 9>        | Percent sign |
-| ^     | E + I        | <3 8>        | Caret |
-| +     | R + U        | <4 7>        | Plus sign |
-| !     | A + Ö        | <13 22>      | Exclamation mark |
-| ?     | S + L        | <14 21>      | Question mark |
-| &     | D + J        | <15 19>      | Ampersand |
-| *     | F + K        | <16 20>      | Asterisk |
+---
+
+### Piantor Pro BT Combo Reference (Updated)
+
+These combos apply to the Piantor Pro BT using the new system. Key positions are from `piantor_pro_bt-layouts.dtsi` (`default_map`).
+
+| Symbol | Keys to Press | Key Positions | Description            |
+|--------|---------------|---------------|------------------------|
+| \`     | Q + W         | <1 2>         | Grave accent           |
+| ~      | W + E         | <2 3>         | Tilde                  |
+| '      | E + R         | <3 4>         | Single quote           |
+| [      | A + S         | <13 14>       | Left square bracket    |
+| {      | S + D         | <14 15>       | Left curly brace       |
+| (      | D + F         | <15 16>       | Left parenthesis       |
+| $      | Z + X         | <25 26>       | Dollar sign            |
+| #      | X + C         | <26 27>       | Hash sign              |
+| /      | C + V         | <27 28>       | Forward slash          |
+| "      | U + I         | <7 8>         | Double quote           |
+| <      | I + O         | <8 9>         | Less-than sign         |
+| >      | O + P         | <9 10>        | Greater-than sign      |
+| )      | J + K         | <19 20>       | Right parenthesis      |
+| }      | K + L         | <20 21>       | Right curly brace      |
+| ]      | L + Ö         | <21 22>       | Right square bracket   |
+| @      | M + ,         | <31 32>       | At sign                |
+| \\     | , + .         | <32 33>       | Backslash              |
+| \|     | . + -         | <33 34>       | Pipe                   |
+| =      | Q + P         | <1 10>        | Equals sign            |
+| %      | W + O         | <2 9>         | Percent sign           |
+| ^      | E + I         | <3 8>         | Caret                  |
+| +      | R + U         | <4 7>         | Plus sign              |
+| !      | A + Ö         | <13 22>       | Exclamation mark       |
+| ?      | S + L         | <14 21>       | Question mark          |
+| &      | D + J         | <15 19>       | Ampersand              |
+| *      | F + K         | <16 20>       | Asterisk               |
 
 
 ## Notes
