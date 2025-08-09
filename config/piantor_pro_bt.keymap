@@ -57,166 +57,197 @@
    
    
    
+   / {
    combos {
    compatible = "zmk,combos";
    
-   /* Single-hand combos */
-   combo_qw {
+   // --- Single-side combos (same hand) ---
+   combo_qw_grave {
    timeout-ms = <50>;
    key-positions = <1 2>;
+   layers = <0>;
    bindings = <&kp SV_GRAVE>;
    };
    
-   combo_we {
+   combo_we_tilde {
    timeout-ms = <50>;
    key-positions = <2 3>;
+   layers = <0>;
    bindings = <&kp SV_TILDE>;
    };
    
-   combo_io {
+   combo_io_lt {
    timeout-ms = <50>;
    key-positions = <8 9>;
+   layers = <0>;
    bindings = <&kp SV_LT>;
    };
    
-   combo_op {
+   combo_op_gt {
    timeout-ms = <50>;
    key-positions = <9 10>;
+   layers = <0>;
    bindings = <&kp SV_GT>;
    };
    
-   combo_er {
+   combo_er_sqt {
    timeout-ms = <50>;
    key-positions = <3 4>;
+   layers = <0>;
    bindings = <&kp SV_SQT>;
    };
    
-   combo_ui {
+   combo_ui_dqt {
    timeout-ms = <50>;
    key-positions = <7 8>;
+   layers = <0>;
    bindings = <&kp SV_DQT>;
    };
    
-   combo_as {
+   combo_as_lbkt {
    timeout-ms = <50>;
    key-positions = <13 14>;
+   layers = <0>;
    bindings = <&kp SV_LBKT>;
    };
    
-   combo_sd {
+   combo_sd_lbrc {
    timeout-ms = <50>;
    key-positions = <14 15>;
+   layers = <0>;
    bindings = <&kp SV_LBRC>;
    };
    
-   combo_df {
+   combo_df_lpar {
    timeout-ms = <50>;
    key-positions = <15 16>;
+   layers = <0>;
    bindings = <&kp SV_LPAR>;
    };
    
-   combo_jk {
+   combo_jk_rpar {
    timeout-ms = <50>;
    key-positions = <19 20>;
+   layers = <0>;
    bindings = <&kp SV_RPAR>;
    };
    
-   combo_kl {
+   combo_kl_rbrc {
    timeout-ms = <50>;
    key-positions = <20 21>;
+   layers = <0>;
    bindings = <&kp SV_RBRC>;
    };
    
-   combo_lo_umlaut {
+   combo_loe_rbkt {
    timeout-ms = <50>;
    key-positions = <21 22>;
+   layers = <0>;
    bindings = <&kp SV_RBKT>;
    };
    
-   combo_zx {
+   combo_zx_dllr {
    timeout-ms = <50>;
    key-positions = <25 26>;
+   layers = <0>;
    bindings = <&kp SV_DLLR>;
    };
    
-   combo_xc {
+   combo_xc_hash {
    timeout-ms = <50>;
    key-positions = <26 27>;
+   layers = <0>;
    bindings = <&kp SV_HASH>;
    };
    
-   combo_cv {
+   combo_cv_fslh {
    timeout-ms = <50>;
    key-positions = <27 28>;
+   layers = <0>;
    bindings = <&kp SV_FSLH>;
    };
    
-   combo_comma_period {
+   combo_comma_dot_bslh {
    timeout-ms = <50>;
    key-positions = <32 33>;
+   layers = <0>;
    bindings = <&kp SV_BSLH>;
    };
    
-   combo_m_comma {
+   combo_m_comma_at {
    timeout-ms = <50>;
    key-positions = <31 32>;
+   layers = <0>;
    bindings = <&kp SV_AT>;
    };
    
-   combo_period_minus {
+   combo_dot_minus_pipe {
    timeout-ms = <50>;
    key-positions = <33 34>;
+   layers = <0>;
    bindings = <&kp SV_PIPE>;
    };
    
-   /* Dual-side combos */
-   combo_qp {
+   // --- Dual-side combos (mirrored across hands) ---
+   combo_qp_equal {
    timeout-ms = <50>;
    key-positions = <1 10>;
+   layers = <0>;
    bindings = <&kp SV_EQUAL>;
    };
    
-   combo_wo {
+   combo_wo_prcnt {
    timeout-ms = <50>;
    key-positions = <2 9>;
+   layers = <0>;
    bindings = <&kp SV_PRCNT>;
    };
    
-   combo_ei {
+   combo_ei_caret {
    timeout-ms = <50>;
    key-positions = <3 8>;
+   layers = <0>;
    bindings = <&kp SV_CARET>;
    };
    
-   combo_ru {
+   combo_ru_plus {
    timeout-ms = <50>;
    key-positions = <4 7>;
+   layers = <0>;
    bindings = <&kp SV_PLUS>;
    };
    
-   combo_a_o_umlaut {
+   combo_ao_excl {
    timeout-ms = <50>;
    key-positions = <13 22>;
+   layers = <0>;
    bindings = <&kp SV_EXCL>;
    };
    
-   combo_sl {
+   combo_sl_qmark {
    timeout-ms = <50>;
    key-positions = <14 21>;
+   layers = <0>;
    bindings = <&kp SV_QMARK>;
    };
    
-   combo_dk {
+   combo_dk_amps {
    timeout-ms = <50>;
    key-positions = <15 20>;
+   layers = <0>;
    bindings = <&kp SV_AMPS>;
    };
    
-   combo_fj {
+   combo_fj_astrk {
    timeout-ms = <50>;
    key-positions = <16 19>;
+   layers = <0>;
    bindings = <&kp SV_ASTRK>;
    };
+
+ // Note: NOP combos from the org table intentionally omitted
+   // (z-<25,34>, x.<26,33>, c,<27,32>, vm<28,31>)
+ };
  };
   
   
