@@ -90,38 +90,6 @@ These combos apply to the Piantor Pro BT using the new system. Key positions fro
 | &     | D + J        | <15 19>      | Ampersand |
 | *     | F + K        | <16 20>      | Asterisk |
 
-## Corne Pro BT Combo Reference (Updated)
-
-Adapted for Corne (including 4.1 variants with no middle thumb keys). Key positions from your provided DTSI (default_map). Positions may shift slightly; verify in your keymap.
-
-| Symbol | Keys to Press | Key Positions | Description |
-|--------|---------------|---------------|-------------|
-| `     | Q + W        | <1 2>        | Grave accent |
-| ~     | W + E        | <2 3>        | Tilde |
-| '     | E + R        | <3 4>        | Single quote |
-| [     | A + S        | <15 16>      | Left square bracket |
-| {     | S + D        | <16 17>      | Left curly brace |
-| (     | D + F        | <17 18>      | Left parenthesis |
-| $     | Z + X        | <29 30>      | Dollar sign |
-| #     | X + C        | <30 31>      | Hash sign |
-| /     | C + V        | <31 32>      | Forward slash |
-| "     | U + I        | <9 10>       | Double quote |
-| <     | I + O        | <10 11>      | Less-than sign |
-| >     | O + P        | <11 12>      | Greater-than sign |
-| )     | J + K        | <23 24>      | Right parenthesis |
-| }     | K + L        | <24 25>      | Right curly brace |
-| ]     | L + Ö        | <25 26>      | Right square bracket |
-| @     | M + ,        | <35 36>      | At sign |
-| \     | , + .        | <36 37>      | Backslash |
-| \|    | . + /        | <37 38>      | Pipe (adjust if - is used) |
-| =     | Q + P        | <1 12>       | Equals sign |
-| %     | W + O        | <2 11>       | Percent sign |
-| ^     | E + I        | <3 10>       | Caret |
-| +     | R + U        | <4 9>        | Plus sign |
-| !     | A + Ö        | <15 26>      | Exclamation mark |
-| ?     | S + L        | <16 25>      | Question mark |
-| &     | D + J        | <17 23>      | Ampersand |
-| *     | F + K        | <18 24>      | Asterisk |
 
 ## Notes
 - **Key Positions**: Refer to the `default_map` in your keyboard's `.dtsi` file for exact layout.
