@@ -39,58 +39,69 @@ I've developed a new combo system using chorded key presses (pressing two keys s
 Tables show key pairs (e.g., "qw") and triggered symbols (e.g., "`"). "split" separates left/right hands.
 
 
-
 ### Single-Side Combos
+Typing two adjacent keys for a combo (same hand).  
+Within `< >` are the key positions from `default_map`.
 
-| Left Hand       |               |               | Split | Right Hand      |               |               |    |
-|-----------------|---------------|---------------|-------|-----------------|---------------|---------------|----|
-| qw("`")         | we("~")       | er("'")        |       | ui("\"")        | io("<")       | op(">")       |    |
-| as("[")         | sd("{")       | df("(")        |       | jk(")")         | kl("}")       | lö("]")       |    |
-| zx("$")         | xc("#")       | cv("/")        |       | m,("@")         | ,.( "\\")     | .-("\|")      |    |
+| Left Hand         |                   |                   | Split | Right Hand        |                   |                      |
+|-------------------|-------------------|-------------------|-------|-------------------|-------------------|----------------------|
+| qw<1,2>("`")      | we<2,3>("~")      | io<8,9>("<")      |       | op<9,10>(">")     | er<3,4>("'")      | ui<7,8>("\\"")       |
+| as<13,14>("[")    | sd<14,15>("{")    | df<15,16>("(")    |       | jk<19,20>(")")    | kl<20,21>("}")    | lö<21,22>("]")       |
+| zx<25,26>("$")    | xc<26,27>("#")    | cv<27,28>("/")    |       | ,.<32,33>("\\")   | m,<31,32>("@")    | .-<33,34>("pipe")    |
 
 ---
 
 ### Dual-Side Combos
+Typing two keys on opposite sides in a mirrored way for a combo.
 
-| Top Row         |               |               |               |
-|-----------------|---------------|---------------|---------------|
-| qp("=")         | wo("%")       | ei("^")       | ru("+")       |
-| aö("!")         | sl("?")       | dk("&")       | fj("*")       |
+| Top Row            |                     |                     |                     |    |
+|--------------------|---------------------|---------------------|---------------------|----|
+| qp<1,10>("=")      | wo<2,9>("%")        | ei<3,8>("^")        | ru<4,7>("+")        | <> |
+| aö<13,22>("!")     | sl<14,21>("?")      | dk<15,20>("&")      | fj<16,19>("*")      | <> |
+| z-<25,34>("nop")   | x.<26,33>("nop")    | c,<27,32>("nop")    | vm<28,31>("nop")    | <> |
+
+> Note: `"pipe"` represents the pipe symbol (`\|`). `"nop"` means unmapped/reserved.
 
 ---
 
-### Piantor Pro BT Combo Reference (Updated)
+### Piantor Pro BT Combo Reference (positions and symbols)
 
 These combos apply to the Piantor Pro BT using the new system. Key positions are from `piantor_pro_bt-layouts.dtsi` (`default_map`).
 
-| Symbol | Keys to Press | Key Positions | Description            |
-|--------|---------------|---------------|------------------------|
-| \`     | Q + W         | <1 2>         | Grave accent           |
-| ~      | W + E         | <2 3>         | Tilde                  |
-| '      | E + R         | <3 4>         | Single quote           |
-| [      | A + S         | <13 14>       | Left square bracket    |
-| {      | S + D         | <14 15>       | Left curly brace       |
-| (      | D + F         | <15 16>       | Left parenthesis       |
-| $      | Z + X         | <25 26>       | Dollar sign            |
-| #      | X + C         | <26 27>       | Hash sign              |
-| /      | C + V         | <27 28>       | Forward slash          |
-| "      | U + I         | <7 8>         | Double quote           |
-| <      | I + O         | <8 9>         | Less-than sign         |
-| >      | O + P         | <9 10>        | Greater-than sign      |
-| )      | J + K         | <19 20>       | Right parenthesis      |
-| }      | K + L         | <20 21>       | Right curly brace      |
-| ]      | L + Ö         | <21 22>       | Right square bracket   |
-| @      | M + ,         | <31 32>       | At sign                |
-| \\     | , + .         | <32 33>       | Backslash              |
-| \|     | . + -         | <33 34>       | Pipe                   |
-| =      | Q + P         | <1 10>        | Equals sign            |
-| %      | W + O         | <2 9>         | Percent sign           |
-| ^      | E + I         | <3 8>         | Caret                  |
-| +      | R + U         | <4 7>         | Plus sign              |
-| !      | A + Ö         | <13 22>       | Exclamation mark       |
-| ?      | S + L         | <14 21>       | Question mark          |
-| &      | D + J         | <15 19>       | Ampersand              |
-| *      | F + K         | <16 20>       | Asterisk               |
+| Symbol | Keys to Press | Key Positions | Description          |
+|--------|---------------|---------------|----------------------|
+| \`     | Q + W         | <1,2>         | Grave accent         |
+| ~      | W + E         | <2,3>         | Tilde                |
+| '      | E + R         | <3,4>         | Single quote         |
+| "      | U + I         | <7,8>         | Double quote         |
+| <      | I + O         | <8,9>         | Less-than            |
+| >      | O + P         | <9,10>        | Greater-than         |
+| [      | A + S         | <13,14>       | Left square bracket  |
+| {      | S + D         | <14,15>       | Left curly brace     |
+| (      | D + F         | <15,16>       | Left parenthesis     |
+| )      | J + K         | <19,20>       | Right parenthesis    |
+| }      | K + L         | <20,21>       | Right curly brace    |
+| ]      | L + Ö         | <21,22>       | Right square bracket |
+| $      | Z + X         | <25,26>       | Dollar sign          |
+| #      | X + C         | <26,27>       | Hash sign            |
+| /      | C + V         | <27,28>       | Forward slash        |
+| \\     | , + .         | <32,33>       | Backslash            |
+| @      | M + ,         | <31,32>       | At sign              |
+| \|     | . + -         | <33,34>       | Pipe                 |
+| =      | Q + P         | <1,10>        | Equals sign          |
+| %      | W + O         | <2,9>         | Percent sign         |
+| ^      | E + I         | <3,8>         | Caret                |
+| +      | R + U         | <4,7>         | Plus sign            |
+| !      | A + Ö         | <13,22>       | Exclamation mark     |
+| ?      | S + L         | <14,21>       | Question mark        |
+| &      | D + K         | <15,20>       | Ampersand            |
+| *      | F + J         | <16,19>       | Asterisk             |
+
+#### Notes
+- **Visualization vs. Implementation:** The single/dual tables above exactly match your org-mode representation with `<pos,pos>` inline; the list here shows the same combos in a searchable form.
+- **Swedish Locale:** Combos emit symbols using the Swedish layout (see `locale/keys_sv.h` for keycodes such as `SV_LBKT`, `SV_RBRC`, `SV_DQT`, `SV_PIPE`, etc.).
+- **Reserved (nop):** The four mirrored bottom-row combos are intentionally shown as `"nop"` in the table to mark them as reserved; they’re *not* mapped in firmware.
+
 
 
 ## Notes
