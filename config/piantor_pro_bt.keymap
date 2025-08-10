@@ -53,149 +53,156 @@
    
    
    
-   
    combos {
    compatible = "zmk,combos";
    
-   /* ---- Single-side (same hand) ---- */
-   /* Row 1 */
-   combo_qw_grave {
+   // ---------- Single-hand (same side), adjacent keys ----------
+   // Top row
+   combo_we_fslh {
    timeout-ms = <50>; layers = <0>;
-   key-positions = <1 2>;          /* q + w */
-   bindings = <&kp SV_GRAVE>;      /* ` */
+   key-positions = <2 3>;
+   bindings = <&kp SV_FSLH>;   // "/"
    };
-   combo_we_tilde {
+   combo_er_lbrc {
    timeout-ms = <50>; layers = <0>;
-   key-positions = <2 3>;          /* w + e */
-   bindings = <&kp SV_TILDE>;      /* ~ */
-   };
-   combo_er_less {
-   timeout-ms = <50>; layers = <0>;
-   key-positions = <3 4>;          /* e + r */
-   bindings = <&kp SV_LESS_THAN>;  /* < */
-   };
-   combo_ui_greater {
-   timeout-ms = <50>; layers = <0>;
-   key-positions = <7 8>;          /* u + i */
-   bindings = <&kp SV_GREATER_THAN>; /* > */
-   };
-   combo_io_squote {
-   timeout-ms = <50>; layers = <0>;
-   key-positions = <8 9>;          /* i + o */
-   bindings = <&kp SV_SINGLE_QUOTE>; /* ' */
-   };
-   combo_op_dquote {
-   timeout-ms = <50>; layers = <0>;
-   key-positions = <9 10>;         /* o + p */
-   bindings = <&kp SV_DOUBLE_QUOTES>; /* " */
+   key-positions = <3 4>;
+   bindings = <&kp SV_LBRC>;   // "{"
    };
    
-   /* Row 2 */
-   combo_as_lbracket {
+   // Top row (right)
+   combo_ui_rbrc {
    timeout-ms = <50>; layers = <0>;
-   key-positions = <13 14>;        /* a + s */
-   bindings = <&kp SV_LEFT_BRACKET>;  /* [ */
+   key-positions = <7 8>;
+   bindings = <&kp SV_RBRC>;   // "}"
    };
-   combo_sd_lbrace {
+   combo_io_bslh {
    timeout-ms = <50>; layers = <0>;
-   key-positions = <14 15>;        /* s + d */
-   bindings = <&kp SV_LEFT_BRACE>;    /* { */
-   };
-   combo_df_lparen {
-   timeout-ms = <50>; layers = <0>;
-   key-positions = <15 16>;        /* d + f */
-   bindings = <&kp SV_LEFT_PARENTHESIS>; /* ( */
-   };
-   combo_jk_rparen {
-   timeout-ms = <50>; layers = <0>;
-   key-positions = <19 20>;        /* j + k */
-   bindings = <&kp SV_RIGHT_PARENTHESIS>; /* ) */
-   };
-   combo_kl_rbrace {
-   timeout-ms = <50>; layers = <0>;
-   key-positions = <20 21>;        /* k + l */
-   bindings = <&kp SV_RIGHT_BRACE>;   /* } */
-   };
-   combo_loe_rbracket {
-   timeout-ms = <50>; layers = <0>;
-   key-positions = <21 22>;        /* l + ö */
-   bindings = <&kp SV_RIGHT_BRACKET>;  /* ] */
+   key-positions = <8 9>;
+   bindings = <&kp SV_BSLH>;   // "\"
    };
    
-   /* Row 3 / bottom */
-   combo_zx_dollar {
+   // Home row (left/right)
+   combo_sd_lt {
    timeout-ms = <50>; layers = <0>;
-   key-positions = <25 26>;        /* z + x */
-   bindings = <&kp SV_DOLLAR>;     /* $ */
+   key-positions = <14 15>;
+   bindings = <&kp SV_LT>;     // "<"
    };
-   combo_xc_hash {
+   combo_df_lpar {
    timeout-ms = <50>; layers = <0>;
-   key-positions = <26 27>;        /* x + c */
-   bindings = <&kp SV_HASH>;       /* # */
+   key-positions = <15 16>;
+   bindings = <&kp SV_LPAR>;   // "("
    };
-   combo_cv_slash {
+   combo_jk_rpar {
    timeout-ms = <50>; layers = <0>;
-   key-positions = <27 28>;        /* c + v */
-   bindings = <&kp SV_SLASH>;      /* / */
+   key-positions = <19 20>;
+   bindings = <&kp SV_RPAR>;   // ")"
    };
-   combo_comma_dot_backslash {
+   combo_kl_gt {
    timeout-ms = <50>; layers = <0>;
-   key-positions = <31 32>;        /* , + . */
-   bindings = <&kp SV_BACKSLASH>;  /* \ */
+   key-positions = <20 21>;
+   bindings = <&kp SV_GT>;     // ">"
    };
-   combo_m_comma_at {
+   
+   // Bottom row (left/right)
+   combo_xc_caret {
    timeout-ms = <50>; layers = <0>;
- key-positions = <32 33>;        /* . note: as per your table m,<32,33> */
-   bindings = <&kp SV_AT_SIGN>;    /* @ */
- };
-   combo_dot_minus_pipe {
+   key-positions = <26 27>;
+   bindings = <&kp SV_CARET>;  // "^"
+   };
+   combo_cv_lbkt {
    timeout-ms = <50>; layers = <0>;
-   key-positions = <33 34>;        /* . + - */
-   bindings = <&kp SV_PIPE>;       /* | */
+   key-positions = <27 28>;
+   bindings = <&kp SV_LBKT>;   // "["
+   };
+   combo_commadot_rbkt {
+   timeout-ms = <50>; layers = <0>;
+   key-positions = <31 32>;
+   bindings = <&kp SV_RBKT>;   // "]"
+   };
+   combo_mcomma_dollar {
+   timeout-ms = <50>; layers = <0>;
+   key-positions = <32 33>;
+   bindings = <&kp SV_DOLLAR>; // "$"
+   };
+   
+   // ---------- Dual-side (mirrored) ----------
+   // Top row
+   combo_wo_asterisk {
+   timeout-ms = <50>; layers = <0>;
+   key-positions = <2 9>;
+   bindings = <&kp SV_ASTRK>;  // "*"
+   };
+   combo_ei_question {
+   timeout-ms = <50>; layers = <0>;
+   key-positions = <3 8>;
+   bindings = <&kp SV_QUES>;   // "?"
+   };
+   combo_ru_exclam {
+   timeout-ms = <50>; layers = <0>;
+   key-positions = <4 7>;
+   bindings = <&kp SV_EXCL>;   // "!"
+   };
+   combo_ty_at {
+   timeout-ms = <50>; layers = <0>;
+   key-positions = <5 6>;
+   bindings = <&kp SV_AT>;     // "@"
+   };
+   
+   // Home row
+   combo_aodia_percent {
+   timeout-ms = <50>; layers = <0>;
+   key-positions = <13 22>;
+   bindings = <&kp SV_PERCENT>; // "%"
+   };
+   combo_sl_equal {
+   timeout-ms = <50>; layers = <0>;
+   key-positions = <14 21>;
+   bindings = <&kp SV_EQUAL>;   // "="
+   };
+   combo_dk_sqt {
+   timeout-ms = <50>; layers = <0>;
+   key-positions = <15 20>;
+   bindings = <&kp SV_SQT>;     // "'"
+   };
+   combo_fj_dqt {
+   timeout-ms = <50>; layers = <0>;
+   key-positions = <16 19>;
+   bindings = <&kp SV_DQT>;     // "\"\"" (double quote)
+   };
+   combo_gh_amp {
+   timeout-ms = <50>; layers = <0>;
+   key-positions = <17 18>;
+   bindings = <&kp SV_AMP>;     // "&"
+   };
+   
+   // Bottom row
+   combo_zminus_tilde {
+   timeout-ms = <50>; layers = <0>;
+   key-positions = <25 34>;
+   bindings = <&kp SV_TILDE>;   // "~"
+   };
+   combo_xdot_plus {
+   timeout-ms = <50>; layers = <0>;
+   key-positions = <26 33>;
+   bindings = <&kp SV_PLUS>;    // "+"
+   };
+   combo_ccomma_grave {
+   timeout-ms = <50>; layers = <0>;
+   key-positions = <27 32>;
+   bindings = <&kp SV_GRAVE>;   // "`"
+   };
+   combo_vm_pipe {
+   timeout-ms = <50>; layers = <0>;
+   key-positions = <28 31>;
+   bindings = <&kp SV_PIPE>;    // "|"
+   };
+   combo_bn_hash {
+   timeout-ms = <50>; layers = <0>;
+   key-positions = <29 30>;
+   bindings = <&kp SV_HASH>;    // "#"
+   };
  };
    
-   /* ---- Dual-side (mirrored) ---- (unchanged) */
-   combo_qp_equal {
-   timeout-ms = <50>; layers = <0>;
-   key-positions = <1 10>;         /* q + p */
-   bindings = <&kp SV_EQUAL>;      /* = */
- };
-   combo_wo_percent {
-   timeout-ms = <50>; layers = <0>;
-   key-positions = <2 9>;          /* w + o */
-   bindings = <&kp SV_PERCENT>;    /* % */
- };
-   combo_ei_caret {
-   timeout-ms = <50>; layers = <0>;
-   key-positions = <3 8>;          /* e + i */
-   bindings = <&kp SV_CARET>;      /* ^ */
- };
-   combo_ru_plus {
-   timeout-ms = <50>; layers = <0>;
-   key-positions = <4 7>;          /* r + u */
-   bindings = <&kp SV_PLUS>;       /* + */
- };
-   combo_ao_exclam {
-   timeout-ms = <50>; layers = <0>;
-   key-positions = <13 22>;        /* a + ö */
-   bindings = <&kp SV_EXCLAMATION>; /* ! */
- };
-   combo_sl_qmark {
-   timeout-ms = <50>; layers = <0>;
-   key-positions = <14 21>;        /* s + l */
-   bindings = <&kp SV_QUESTION>;   /* ? */
- };
-   combo_dk_ampersand {
-   timeout-ms = <50>; layers = <0>;
-   key-positions = <15 20>;        /* d + k */
-   bindings = <&kp SV_AMPERSAND>;  /* & */
- };
-   combo_fj_asterisk {
-   timeout-ms = <50>; layers = <0>;
-   key-positions = <16 19>;        /* f + j */
-   bindings = <&kp SV_ASTERISK>;   /* * */
- };
- };
    
    
   

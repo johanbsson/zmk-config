@@ -40,52 +40,51 @@ Tables show key pairs (e.g., "qw") and triggered symbols (e.g., "`"). "split" se
 
 #### Single-Side Combos
 
-| Left Hand         |                |                | Split | Right Hand        |                |                   |
-|-------------------|----------------|----------------|-------|-------------------|----------------|-------------------|
-| qw<1,2>("`")      | we<2,3>("~")   | er<3,4>("<")   |       | ui<7,8>(">")      | io<8,9>("'")   | op<9,10>("\"")    |
-| as<13,14>("[")    | sd<14,15>("{") | df<15,16>("(") |       | jk<19,20>(")")    | kl<20,21>("}") | lö<21,22>("]")    |
-| zx<25,26>("$")    | xc<26,27>("#") | cv<27,28>("/") |       | ,.<31,32>("\\")   | m,<32,33>("@") | .-<33,34>("pipe") |
+| Left Hand        |                |                | Split | Right Hand     |                |                  |
+|------------------+----------------+----------------+-------+----------------+----------------+------------------|
+| qw<1,2>("nop")   | we<2,3>("/")   | er<3,4>("{")   |       | ui<7,8>("}")   | io<8,9>("\")   | op<9,10>("nop")  |
+| as<13,14>("nop") | sd<14,15>("<") | df<15,16>("(") |       | jk<19,20>(")") | kl<20,21>(">") | lö<21,22>("nop") |
+| zx<25,26>("nop") | xc<26,27>("^") | cv<27,28>("[") |       | ,.<31,32>("]") | m,<32,33>("$") | .-<33,34>("nop") |
 
 #### Dual-Side Combos
 
-| Top Row       |                 |                 |                 |
-|---------------|-----------------|-----------------|-----------------|
-| qp<1,10>("=") | wo<2,9>("%")    | ei<3,8>("^")    | ru<4,7>("+")    |
-| aö<13,22>("!")| sl<14,21>("?")  | dk<15,19>("&")  | fj<16,20>("*")  |
-| z-("nop")     | x.("nop")       | c,("nop")       | vm("nop")       |
 
+| Top Row          |                |                |                   |                |
+|------------------+----------------+----------------+-------------------+----------------|
+| qp<1,10>("nop")  | wo<2,9>("*")   | ei<3,8>("?")   | ru<4,7>("!")      | ty<5,6>("@")   |
+| aö<13,22>("%")   | sl<14,21>("=") | dk<15,20>("'") | fj<16,19>("\"")   | gh<17,18>("&") |
+| z-<25,34>("~")   | x.<26,33>("+") | c,<27,32>("`") | vm<28,31>("pipe") | bn<29,30>("#") |
 
 ## Piantor Pro BT Combo Reference (Updated)
 
 | Symbol | Keys to Press | Key Positions | Description |
 |--------|---------------|---------------|-------------|
-| `     | Q + W          | <1 2>         | Grave accent |
-| ~     | W + E          | <2 3>         | Tilde |
-| <     | E + R          | <3 4>         | Less-than sign |
-| >     | U + I          | <7 8>         | Greater-than sign |
-| '     | I + O          | <8 9>         | Single quote |
-| "     | O + P          | <9 10>        | Double quote |
-| [     | A + S          | <13 14>       | Left square bracket |
-| {     | S + D          | <14 15>       | Left curly brace |
+| /     | W + E          | <2 3>         | Forward slash |
+| {     | E + R          | <3 4>         | Left curly brace |
+| }     | U + I          | <7 8>         | Right curly brace |
+| \\    | I + O          | <8 9>         | Backslash |
+| <     | S + D          | <14 15>       | Less-than sign |
 | (     | D + F          | <15 16>       | Left parenthesis |
 | )     | J + K          | <19 20>       | Right parenthesis |
-| }     | K + L          | <20 21>       | Right curly brace |
-| ]     | L + Ö          | <21 22>       | Right square bracket |
-| $     | Z + X          | <25 26>       | Dollar sign |
-| #     | X + C          | <26 27>       | Hash sign |
-| /     | C + V          | <27 28>       | Forward slash |
-| \\    | , + .          | <31 32>       | Backslash |
-| @     | M + ,          | <32 33>       | At sign |
-| \|    | . + -          | <33 34>       | Pipe |
-| =     | Q + P          | <1 10>        | Equals sign |
-| %     | W + O          | <2 9>         | Percent sign |
-| ^     | E + I          | <3 8>         | Caret |
-| +     | R + U          | <4 7>         | Plus sign |
-| !     | A + Ö          | <13 22>       | Exclamation mark |
-| ?     | S + L          | <14 21>       | Question mark |
-| &     | D + J          | <15 19>       | Ampersand |
-| *     | F + K          | <16 20>       | Asterisk |
-
+| >     | K + L          | <20 21>       | Greater-than sign |
+| ^     | X + C          | <26 27>       | Caret |
+| [     | C + V          | <27 28>       | Left square bracket |
+| ]     | , + .          | <31 32>       | Right square bracket |
+| $     | M + ,          | <32 33>       | Dollar sign |
+| *     | W + O          | <2 9>         | Asterisk |
+| ?     | E + I          | <3 8>         | Question mark |
+| !     | R + U          | <4 7>         | Exclamation mark |
+| @     | T + Y          | <5 6>         | At sign |
+| %     | A + Ö          | <13 22>       | Percent sign |
+| =     | S + L          | <14 21>       | Equals sign |
+| '     | D + K          | <15 20>       | Single quote |
+| "     | F + J          | <16 19>       | Double quote |
+| &     | G + H          | <17 18>       | Ampersand |
+| ~     | Z + -          | <25 34>       | Tilde |
+| +     | X + .          | <26 33>       | Plus sign |
+| `     | C + ,          | <27 32>       | Grave accent |
+| \|    | V + M          | <28 31>       | Pipe |
+| #     | B + N          | <29 30>       | Hash sign |
 
 #### Notes
 - **Visualization vs. Implementation:** The single/dual tables above exactly match your org-mode representation with `<pos,pos>` inline; the list here shows the same combos in a searchable form.
