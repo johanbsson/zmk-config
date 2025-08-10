@@ -135,7 +135,7 @@
    combo_ei_question {
    timeout-ms = <50>; layers = <0>;
    key-positions = <3 8>;
-   bindings = <&kp SV_QUES>;   // "?"
+   bindings = <&kp SV_QMARK>;   // "?"
    };
    combo_ru_exclam {
    timeout-ms = <50>; layers = <0>;
